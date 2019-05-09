@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023DB039228459A8007D35D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023DB037228459A8007D35D1 /* Main.storyboard */; };
 		B11F628F21FE633300363DFE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11F628E21FE633200363DFE /* SecondViewController.swift */; };
 		B16805332221388E00074350 /* whistle_orig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16805322221388E00074350 /* whistle_orig.mp3 */; };
 		B168053522213C2500074350 /* whistle_serv.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B168053422213C2500074350 /* whistle_serv.mp3 */; };
@@ -16,14 +17,12 @@
 		B16CDA6821E55C1800CD222C /* monsterBlock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */; };
 		B16CDA6A21E55C3300CD222C /* buzzle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6921E55C3300CD222C /* buzzle.mp3 */; };
 		B16CDA6C21E55C6800CD222C /* whistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6B21E55C6800CD222C /* whistle.mp3 */; };
-		B1A440202284431800D9E884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A440222284431800D9E884 /* Main.storyboard */; };
 		B1E06D2821E3E8B2008C361A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D2721E3E8B2008C361A /* AppDelegate.swift */; };
 		B1E06D2A21E3E8B2008C361A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D2921E3E8B2008C361A /* ViewController.swift */; };
 		B1E06D2F21E3E8BD008C361A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E06D2E21E3E8BD008C361A /* Assets.xcassets */; };
 		B1E06D3221E3E8BD008C361A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E06D3021E3E8BD008C361A /* LaunchScreen.storyboard */; };
 		B1E06D3D21E3E8BE008C361A /* SportSoundAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D3C21E3E8BE008C361A /* SportSoundAppTests.swift */; };
 		B1E06D4821E3E8BE008C361A /* SportSoundAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D4721E3E8BE008C361A /* SportSoundAppUITests.swift */; };
-		B1E06D5A21E40845008C361A /* noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E06D5921E40845008C361A /* noise.mp3 */; };
 		B1E33E8F21E40CCF0006ED59 /* magic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E33E8E21E40CCF0006ED59 /* magic.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023DB038228459A8007D35D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B11F628E21FE633200363DFE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B16805322221388E00074350 /* whistle_orig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_orig.mp3; sourceTree = "<group>"; };
 		B168053422213C2500074350 /* whistle_serv.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_serv.mp3; sourceTree = "<group>"; };
@@ -55,8 +55,6 @@
 		B16CDA6921E55C3300CD222C /* buzzle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buzzle.mp3; sourceTree = "<group>"; };
 		B16CDA6B21E55C6800CD222C /* whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle.mp3; sourceTree = "<group>"; };
 		B1A4401F2284423D00D9E884 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		B1A440212284431800D9E884 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B1A440242284431E00D9E884 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		B1E06D2421E3E8B2008C361A /* SportSoundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportSoundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E06D2721E3E8B2008C361A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1E06D2921E3E8B2008C361A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 		B1E06D4321E3E8BE008C361A /* SportSoundAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportSoundAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E06D4721E3E8BE008C361A /* SportSoundAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportSoundAppUITests.swift; sourceTree = "<group>"; };
 		B1E06D4921E3E8BE008C361A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1E06D5921E40845008C361A /* noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = noise.mp3; path = ../../../Downloads/noise.mp3; sourceTree = "<group>"; };
 		B1E33E8E21E40CCF0006ED59 /* magic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = magic.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,14 +118,13 @@
 		B1E06D2621E3E8B2008C361A /* SportSoundApp */ = {
 			isa = PBXGroup;
 			children = (
+				023DB037228459A8007D35D1 /* Main.storyboard */,
 				B1E06D2721E3E8B2008C361A /* AppDelegate.swift */,
 				B1E06D2921E3E8B2008C361A /* ViewController.swift */,
 				B11F628E21FE633200363DFE /* SecondViewController.swift */,
-				B1A440222284431800D9E884 /* Main.storyboard */,
 				B1E06D2E21E3E8BD008C361A /* Assets.xcassets */,
 				B1E06D3021E3E8BD008C361A /* LaunchScreen.storyboard */,
 				B1E06D3321E3E8BD008C361A /* Info.plist */,
-				B1E06D5921E40845008C361A /* noise.mp3 */,
 				B168053422213C2500074350 /* whistle_serv.mp3 */,
 				B16805322221388E00074350 /* whistle_orig.mp3 */,
 				B1E33E8E21E40CCF0006ED59 /* magic.mp3 */,
@@ -267,14 +263,13 @@
 				B16CDA6621E55B8200CD222C /* unluck.mp3 in Resources */,
 				B168053522213C2500074350 /* whistle_serv.mp3 in Resources */,
 				B168053722213CFB00074350 /* serv_whistle.mp3 in Resources */,
+				023DB039228459A8007D35D1 /* Main.storyboard in Resources */,
 				B16805332221388E00074350 /* whistle_orig.mp3 in Resources */,
 				B16CDA6821E55C1800CD222C /* monsterBlock.mp3 in Resources */,
 				B16CDA6421E55B7200CD222C /* oou.mp3 in Resources */,
-				B1A440202284431800D9E884 /* Main.storyboard in Resources */,
 				B16CDA6A21E55C3300CD222C /* buzzle.mp3 in Resources */,
 				B16CDA6C21E55C6800CD222C /* whistle.mp3 in Resources */,
 				B1E33E8F21E40CCF0006ED59 /* magic.mp3 in Resources */,
-				B1E06D5A21E40845008C361A /* noise.mp3 in Resources */,
 				B1E06D3221E3E8BD008C361A /* LaunchScreen.storyboard in Resources */,
 				B1E06D2F21E3E8BD008C361A /* Assets.xcassets in Resources */,
 			);
@@ -339,11 +334,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B1A440222284431800D9E884 /* Main.storyboard */ = {
+		023DB037228459A8007D35D1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B1A440212284431800D9E884 /* ru */,
-				B1A440242284431E00D9E884 /* en */,
+				023DB038228459A8007D35D1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
