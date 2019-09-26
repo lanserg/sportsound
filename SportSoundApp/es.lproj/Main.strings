@@ -1,0 +1,93 @@
+
+/* Class = "UILabel"; text = "0"; ObjectID = "4tE-4v-4sy"; */
+"4tE-4v-4sy.text" = "0";
+
+/* Class = "UILabel"; text = "Clear"; ObjectID = "5Xb-Sc-nTP"; */
+"5Xb-Sc-nTP.text" = "Restablecer";
+
+/* Class = "UILabel"; text = "Magic"; ObjectID = "9Vu-tE-TOd"; */
+"9Vu-tE-TOd.text" = "La magia";
+
+/* Class = "UILabel"; text = "Stop timeout"; ObjectID = "ByV-oZ-xxr"; */
+"ByV-oZ-xxr.text" = "Terminar el descanso";
+
+/* Class = "UILabel"; text = "Log"; ObjectID = "JHt-0D-yLi"; */
+"JHt-0D-yLi.text" = "La historia";
+
+/* Class = "UILabel"; text = "reset score"; ObjectID = "MCr-dc-326"; */
+"MCr-dc-326.text" = "Perder puntos";
+
+/* Class = "UILabel"; text = "SET"; ObjectID = "NJa-M4-Ngo"; */
+"NJa-M4-Ngo.text" = "Fiesta";
+
+/* Class = "UITextField"; placeholder = "Team name"; ObjectID = "O6k-bh-PQ2"; */
+"O6k-bh-PQ2.placeholder" = "El equipo";
+
+/* Class = "UILabel"; text = "timeout"; ObjectID = "UAX-lP-CvR"; */
+"UAX-lP-CvR.text" = "Un descanso";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "UvE-S8-DOq"; */
+"UvE-S8-DOq.text" = "0";
+
+/* Class = "UINavigationItem"; title = "Log"; ObjectID = "WlA-mO-t7N"; */
+"WlA-mO-t7N.title" = "La historia";
+
+/* Class = "UINavigationItem"; title = "VolleyApp"; ObjectID = "bBb-QW-wyF"; */
+"bBb-QW-wyF.title" = "VolleyApp";
+
+/* Class = "UIButton"; normalTitle = "BadluckButton"; ObjectID = "cLg-oH-w5V"; */
+"cLg-oH-w5V.normalTitle" = "Desafortunado";
+
+/* Class = "UITextField"; placeholder = "Team name"; ObjectID = "cjn-K0-7mE"; */
+"cjn-K0-7mE.placeholder" = "El equipo";
+
+/* Class = "UILabel"; text = "Bad luck"; ObjectID = "dQs-04-kT5"; */
+"dQs-04-kT5.text" = "Desafortunado";
+
+/* Class = "UIButton"; normalTitle = "BlockButton"; ObjectID = "gHW-BB-5Ak"; */
+"gHW-BB-5Ak.normalTitle" = "Bloque";
+
+/* Class = "UILabel"; text = "finish the match"; ObjectID = "gXl-KQ-bp5"; */
+"gXl-KQ-bp5.text" = "Terminar el partido";
+
+/* Class = "UILabel"; text = "LOG"; ObjectID = "gbN-Yf-NE4"; */
+"gbN-Yf-NE4.text" = "La historia";
+
+/* Class = "UILabel"; text = "end of set"; ObjectID = "hW5-iE-rBP"; */
+"hW5-iE-rBP.text" = "Final del set";
+
+/* Class = "UILabel"; text = "Applause"; ObjectID = "jwk-9X-fAG"; */
+"jwk-9X-fAG.text" = "El aplauso";
+
+/* Class = "UILabel"; text = "Whistle"; ObjectID = "otB-dI-qKr"; */
+"otB-dI-qKr.text" = "Silbato";
+
+/* Class = "UIButton"; normalTitle = "OhhButton"; ObjectID = "piH-H1-NeN"; */
+"piH-H1-NeN.normalTitle" = "Ohhh";
+
+/* Class = "UILabel"; text = "Ohhh"; ObjectID = "swY-a5-oTZ"; */
+"swY-a5-oTZ.text" = "Ohhh";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "t8W-4O-Orb"; */
+"t8W-4O-Orb.text" = "0";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "u33-5J-D9t"; */
+"u33-5J-D9t.text" = "1";
+
+/* Class = "UIButton"; normalTitle = "switchButton"; ObjectID = "v0m-Cl-BJB"; */
+"v0m-Cl-BJB.normalTitle" = "Cambiar";
+
+/* Class = "UILabel"; text = "whistle"; ObjectID = "vdF-be-Pex"; */
+"vdF-be-Pex.text" = "Silbato";
+
+/* Class = "UIButton"; normalTitle = "WhistleButton"; ObjectID = "vgB-ig-dp4"; */
+"vgB-ig-dp4.normalTitle" = "Silbato";
+
+/* Class = "UILabel"; text = "Buzzle"; ObjectID = "x2F-Bc-u6v"; */
+"x2F-Bc-u6v.text" = "Sirena";
+
+/* Class = "UIButton"; normalTitle = "BuzzleButton"; ObjectID = "xbx-8g-z56"; */
+"xbx-8g-z56.normalTitle" = "Sirena";
+
+/* Class = "UILabel"; text = "Block"; ObjectID = "xyi-cA-17i"; */
+"xyi-cA-17i.text" = "Bloque";

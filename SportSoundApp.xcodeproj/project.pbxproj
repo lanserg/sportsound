@@ -8,19 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		023DB039228459A8007D35D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023DB037228459A8007D35D1 /* Main.storyboard */; };
+		B116A2DF22E24C32004ECE1D /* cheer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B116A2DE22E24C31004ECE1D /* cheer.mp3 */; };
 		B11F628F21FE633300363DFE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11F628E21FE633200363DFE /* SecondViewController.swift */; };
+		B13AEC9D22CF7D9200030376 /* ssapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B13AEC9B22CF7D9200030376 /* ssapp.xcdatamodeld */; };
+		B1475118233C1A09005C4339 /* whistle_long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1475117233C1A08005C4339 /* whistle_long.mp3 */; };
 		B16805332221388E00074350 /* whistle_orig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16805322221388E00074350 /* whistle_orig.mp3 */; };
 		B168053522213C2500074350 /* whistle_serv.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B168053422213C2500074350 /* whistle_serv.mp3 */; };
 		B168053722213CFB00074350 /* serv_whistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B168053622213CF900074350 /* serv_whistle.mp3 */; };
+		B169701D2328F2FA00B3B961 /* soundOfTimeout3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B169701A2328F2F900B3B961 /* soundOfTimeout3.mp3 */; };
+		B169701E2328F2FA00B3B961 /* soundOfTimeout1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B169701B2328F2FA00B3B961 /* soundOfTimeout1.mp3 */; };
+		B169701F2328F2FA00B3B961 /* soundOfTimeout2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B169701C2328F2FA00B3B961 /* soundOfTimeout2.mp3 */; };
 		B16CDA6421E55B7200CD222C /* oou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6321E55B7200CD222C /* oou.mp3 */; };
 		B16CDA6621E55B8200CD222C /* unluck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6521E55B8200CD222C /* unluck.mp3 */; };
 		B16CDA6821E55C1800CD222C /* monsterBlock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */; };
 		B16CDA6A21E55C3300CD222C /* buzzle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6921E55C3300CD222C /* buzzle.mp3 */; };
 		B16CDA6C21E55C6800CD222C /* whistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6B21E55C6800CD222C /* whistle.mp3 */; };
+		B1C114FA2334C5BE00BB8ED5 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C114F92334C5BE00BB8ED5 /* Onboarding.storyboard */; };
+		B1C114FC23355E9600BB8ED5 /* WhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FB23355E9600BB8ED5 /* WhistleViewController.swift */; };
+		B1C114FE23355ED200BB8ED5 /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FD23355ED200BB8ED5 /* IconsViewController.swift */; };
+		B1C1150023355EF000BB8ED5 /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FF23355EF000BB8ED5 /* ReadyViewController.swift */; };
+		B1C18BE823265A8A0019BF15 /* soundOfTimeout.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1C18BE723265A890019BF15 /* soundOfTimeout.mp3 */; };
 		B1E06D2821E3E8B2008C361A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D2721E3E8B2008C361A /* AppDelegate.swift */; };
 		B1E06D2A21E3E8B2008C361A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D2921E3E8B2008C361A /* ViewController.swift */; };
 		B1E06D2F21E3E8BD008C361A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E06D2E21E3E8BD008C361A /* Assets.xcassets */; };
-		B1E06D3221E3E8BD008C361A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E06D3021E3E8BD008C361A /* LaunchScreen.storyboard */; };
 		B1E06D3D21E3E8BE008C361A /* SportSoundAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D3C21E3E8BE008C361A /* SportSoundAppTests.swift */; };
 		B1E06D4821E3E8BE008C361A /* SportSoundAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D4721E3E8BE008C361A /* SportSoundAppUITests.swift */; };
 		B1E33E8F21E40CCF0006ED59 /* magic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E33E8E21E40CCF0006ED59 /* magic.mp3 */; };
@@ -45,21 +55,37 @@
 
 /* Begin PBXFileReference section */
 		023DB038228459A8007D35D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1060C9122D8D059000F5646 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		B1060C9222D8D1CC000F5646 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		B1060C9422D8D1DB000F5646 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		B1060C9622D8D1F2000F5646 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
+		B116A2DE22E24C31004ECE1D /* cheer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cheer.mp3; sourceTree = "<group>"; };
 		B11F628E21FE633200363DFE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B13AEC9C22CF7D9200030376 /* ssapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ssapp.xcdatamodel; sourceTree = "<group>"; };
+		B1475117233C1A08005C4339 /* whistle_long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_long.mp3; sourceTree = "<group>"; };
+		B152EB5722BBBAF30078F094 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		B1560B1022B94309007E2EDE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		B16805322221388E00074350 /* whistle_orig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_orig.mp3; sourceTree = "<group>"; };
 		B168053422213C2500074350 /* whistle_serv.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_serv.mp3; sourceTree = "<group>"; };
 		B168053622213CF900074350 /* serv_whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = serv_whistle.mp3; sourceTree = "<group>"; };
+		B169701A2328F2F900B3B961 /* soundOfTimeout3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout3.mp3; sourceTree = "<group>"; };
+		B169701B2328F2FA00B3B961 /* soundOfTimeout1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout1.mp3; sourceTree = "<group>"; };
+		B169701C2328F2FA00B3B961 /* soundOfTimeout2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout2.mp3; sourceTree = "<group>"; };
 		B16CDA6321E55B7200CD222C /* oou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oou.mp3; sourceTree = "<group>"; };
 		B16CDA6521E55B8200CD222C /* unluck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = unluck.mp3; sourceTree = "<group>"; };
 		B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monsterBlock.mp3; sourceTree = "<group>"; };
 		B16CDA6921E55C3300CD222C /* buzzle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buzzle.mp3; sourceTree = "<group>"; };
 		B16CDA6B21E55C6800CD222C /* whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle.mp3; sourceTree = "<group>"; };
-		B1A4401F2284423D00D9E884 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B1BF806522BA5B7900D38D0C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		B1C114F92334C5BE00BB8ED5 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		B1C114FB23355E9600BB8ED5 /* WhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistleViewController.swift; sourceTree = "<group>"; };
+		B1C114FD23355ED200BB8ED5 /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
+		B1C114FF23355EF000BB8ED5 /* ReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
+		B1C18BE723265A890019BF15 /* soundOfTimeout.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout.mp3; sourceTree = "<group>"; };
 		B1E06D2421E3E8B2008C361A /* SportSoundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportSoundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E06D2721E3E8B2008C361A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1E06D2921E3E8B2008C361A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B1E06D2E21E3E8BD008C361A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B1E06D3121E3E8BD008C361A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1E06D3321E3E8BD008C361A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1E06D3821E3E8BE008C361A /* SportSoundAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportSoundAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E06D3C21E3E8BE008C361A /* SportSoundAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportSoundAppTests.swift; sourceTree = "<group>"; };
@@ -95,9 +121,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B16970192328E64D00B3B961 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B1475117233C1A08005C4339 /* whistle_long.mp3 */,
+				B168053422213C2500074350 /* whistle_serv.mp3 */,
+				B1C18BE723265A890019BF15 /* soundOfTimeout.mp3 */,
+				B16805322221388E00074350 /* whistle_orig.mp3 */,
+				B1E33E8E21E40CCF0006ED59 /* magic.mp3 */,
+				B116A2DE22E24C31004ECE1D /* cheer.mp3 */,
+				B169701B2328F2FA00B3B961 /* soundOfTimeout1.mp3 */,
+				B169701C2328F2FA00B3B961 /* soundOfTimeout2.mp3 */,
+				B169701A2328F2F900B3B961 /* soundOfTimeout3.mp3 */,
+				B16CDA6321E55B7200CD222C /* oou.mp3 */,
+				B168053622213CF900074350 /* serv_whistle.mp3 */,
+				B16CDA6521E55B8200CD222C /* unluck.mp3 */,
+				B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */,
+				B16CDA6921E55C3300CD222C /* buzzle.mp3 */,
+				B16CDA6B21E55C6800CD222C /* whistle.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		B1E06D1B21E3E8B1008C361A = {
 			isa = PBXGroup;
 			children = (
+				B13AEC9B22CF7D9200030376 /* ssapp.xcdatamodeld */,
 				B1E06D2621E3E8B2008C361A /* SportSoundApp */,
 				B1E06D3B21E3E8BE008C361A /* SportSoundAppTests */,
 				B1E06D4621E3E8BE008C361A /* SportSoundAppUITests */,
@@ -121,19 +170,14 @@
 				023DB037228459A8007D35D1 /* Main.storyboard */,
 				B1E06D2721E3E8B2008C361A /* AppDelegate.swift */,
 				B1E06D2921E3E8B2008C361A /* ViewController.swift */,
+				B1C114F92334C5BE00BB8ED5 /* Onboarding.storyboard */,
+				B1C114FB23355E9600BB8ED5 /* WhistleViewController.swift */,
+				B1C114FD23355ED200BB8ED5 /* IconsViewController.swift */,
+				B1C114FF23355EF000BB8ED5 /* ReadyViewController.swift */,
 				B11F628E21FE633200363DFE /* SecondViewController.swift */,
 				B1E06D2E21E3E8BD008C361A /* Assets.xcassets */,
-				B1E06D3021E3E8BD008C361A /* LaunchScreen.storyboard */,
 				B1E06D3321E3E8BD008C361A /* Info.plist */,
-				B168053422213C2500074350 /* whistle_serv.mp3 */,
-				B16805322221388E00074350 /* whistle_orig.mp3 */,
-				B1E33E8E21E40CCF0006ED59 /* magic.mp3 */,
-				B16CDA6321E55B7200CD222C /* oou.mp3 */,
-				B168053622213CF900074350 /* serv_whistle.mp3 */,
-				B16CDA6521E55B8200CD222C /* unluck.mp3 */,
-				B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */,
-				B16CDA6921E55C3300CD222C /* buzzle.mp3 */,
-				B16CDA6B21E55C6800CD222C /* whistle.mp3 */,
+				B16970192328E64D00B3B961 /* Sounds */,
 			);
 			path = SportSoundApp;
 			sourceTree = "<group>";
@@ -224,6 +268,11 @@
 				TargetAttributes = {
 					B1E06D2321E3E8B2008C361A = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					B1E06D3721E3E8BE008C361A = {
 						CreatedOnToolsVersion = 10.0;
@@ -242,6 +291,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				es,
+				fr,
+				de,
+				"zh-Hant",
+				it,
 			);
 			mainGroup = B1E06D1B21E3E8B1008C361A;
 			productRefGroup = B1E06D2521E3E8B2008C361A /* Products */;
@@ -267,11 +322,17 @@
 				B16805332221388E00074350 /* whistle_orig.mp3 in Resources */,
 				B16CDA6821E55C1800CD222C /* monsterBlock.mp3 in Resources */,
 				B16CDA6421E55B7200CD222C /* oou.mp3 in Resources */,
+				B169701E2328F2FA00B3B961 /* soundOfTimeout1.mp3 in Resources */,
 				B16CDA6A21E55C3300CD222C /* buzzle.mp3 in Resources */,
+				B1475118233C1A09005C4339 /* whistle_long.mp3 in Resources */,
 				B16CDA6C21E55C6800CD222C /* whistle.mp3 in Resources */,
+				B169701D2328F2FA00B3B961 /* soundOfTimeout3.mp3 in Resources */,
+				B116A2DF22E24C32004ECE1D /* cheer.mp3 in Resources */,
 				B1E33E8F21E40CCF0006ED59 /* magic.mp3 in Resources */,
-				B1E06D3221E3E8BD008C361A /* LaunchScreen.storyboard in Resources */,
+				B169701F2328F2FA00B3B961 /* soundOfTimeout2.mp3 in Resources */,
+				B1C114FA2334C5BE00BB8ED5 /* Onboarding.storyboard in Resources */,
 				B1E06D2F21E3E8BD008C361A /* Assets.xcassets in Resources */,
+				B1C18BE823265A8A0019BF15 /* soundOfTimeout.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +357,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C1150023355EF000BB8ED5 /* ReadyViewController.swift in Sources */,
 				B11F628F21FE633300363DFE /* SecondViewController.swift in Sources */,
+				B1C114FE23355ED200BB8ED5 /* IconsViewController.swift in Sources */,
+				B1C114FC23355E9600BB8ED5 /* WhistleViewController.swift in Sources */,
+				B13AEC9D22CF7D9200030376 /* ssapp.xcdatamodeld in Sources */,
 				B1E06D2A21E3E8B2008C361A /* ViewController.swift in Sources */,
 				B1E06D2821E3E8B2008C361A /* AppDelegate.swift in Sources */,
 			);
@@ -338,17 +403,15 @@
 			isa = PBXVariantGroup;
 			children = (
 				023DB038228459A8007D35D1 /* Base */,
+				B1560B1022B94309007E2EDE /* ru */,
+				B1BF806522BA5B7900D38D0C /* es */,
+				B152EB5722BBBAF30078F094 /* fr */,
+				B1060C9122D8D059000F5646 /* en */,
+				B1060C9222D8D1CC000F5646 /* de */,
+				B1060C9422D8D1DB000F5646 /* zh-Hant */,
+				B1060C9622D8D1F2000F5646 /* it */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B1E06D3021E3E8BD008C361A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1E06D3121E3E8BD008C361A /* Base */,
-				B1A4401F2284423D00D9E884 /* ru */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -462,7 +525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -632,6 +695,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B13AEC9B22CF7D9200030376 /* ssapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B13AEC9C22CF7D9200030376 /* ssapp.xcdatamodel */,
+			);
+			currentVersion = B13AEC9C22CF7D9200030376 /* ssapp.xcdatamodel */;
+			path = ssapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B1E06D1C21E3E8B1008C361A /* Project object */;
 }
