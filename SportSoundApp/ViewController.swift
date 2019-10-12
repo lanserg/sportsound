@@ -214,8 +214,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                 self.team2log+=1
                 self.stringequal()
             }
+            self.reset()
         })
-        
         
         let match = UIAlertAction(title: "Match", style: .default, handler:  { (action) -> Void in
             print("Match button tapped")
@@ -232,12 +232,22 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         
         dialogMessage.addAction(set)
         dialogMessage.addAction(match)
-        
-        self.present(dialogMessage, animated: true, completion: nil)
+       // self.present(dialogMessage, animated: true, completion: nil)
 
+        self.present(dialogMessage, animated: true) {
+            dialogMessage.view.superview?.isUserInteractionEnabled = true
+            dialogMessage.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.alertControllerBackgroundTapped)))
+        }
+     
         finalWhistleButton.isEnabled = false
     }
 
+    @objc func alertControllerBackgroundTapped()
+    {
+        self.dismiss(animated: true, completion: nil)
+        finalWhistleButton.isEnabled = true
+    }
+    
     func arrRemove()  {
         arrayOfData.removeAll()
     }
@@ -263,6 +273,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         t2 = ""
         inputTeam1.text = NSString (format: "%@", team1) as String
         inputTeam2.text = NSString (format: "%@", team2) as String
+        serviceBallImg.isHidden = true
+        serviceBall2Img.isHidden = true
     }
 
     var t1 = ""
@@ -299,14 +311,35 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         reset ()
     }
     
+    var sc1 = 0
+    var sc2 = 0
+    
+   
+    
     @IBAction func score1plus(_ sender: Any) {
-        finalWhistleButton.isEnabled = true
-        if (score1 < 99) {
-        score1+=1
+        servNumLBL1.isHidden = false
+       if (saveServ == 0) {
+            sc2 = 0
         }
+        if (sc1 == 0 && servNumLBL1.text == "1") {
+            servNumLBL1.text = "2"
+        } else if (sc1 == 0 && servNumLBL1.text == "2"){
+            servNumLBL1.text = "1"
+        }  else if (sc1 != 0 && servNumLBL1.text == "1"){
+            servNumLBL1.text = "1"
+        }  else if (sc1 != 0 && servNumLBL1.text == "2"){
+            servNumLBL1.text = "2"
+        }
+        sc1+=1
+        print("sc1 =", sc1)
+        finalWhistleButton.isEnabled = true
+            if (score1 < 99) {
+                score1+=1
+            }
         changeSides()
         score1LBL.text = NSString (format: "%i", score1) as String
         serviceBallImg.isHidden = false
+        servNumLBL2.isHidden = true
         serviceBall2Img.isHidden = true
 
         let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
@@ -318,6 +351,13 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         score1Button.isUserInteractionEnabled = true
         score1Button.addGestureRecognizer(upSwipe)
         score1Button.addGestureRecognizer(downSwipe)
+        if (score1LBL.text == "1") {
+            select_service1.isHidden = false
+            //serviceBallImg.isHidden = true
+        } else {
+            select_service1.isHidden = true
+        }
+        saveServ = 0
     }
     
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
@@ -327,11 +367,27 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                 if (score1 >= 0 && score1 < 99) {
                     score1+=1
                 score1LBL.text = NSString (format: "%i", score1) as String
+                    if (score1LBL.text == "1") {
+                        select_service1.isHidden = false
+                        serviceBallImg.isHidden = true
+                    }
+                    else {
+                        select_service1.isHidden = true
+                    }
                 }
             case .down:
                 if (score1 > 0 && score1 <= 99) {
                     score1-=1
                 score1LBL.text = NSString (format: "%i", score1) as String
+                    if (score1LBL.text == "1") {
+                        select_service1.isHidden = false
+                        serviceBallImg.isHidden = true
+                    } else {
+                        select_service1.isHidden = true
+                    }
+                    if (score1LBL.text == "0" && score2LBL.text == "0") {
+                        finalWhistleButton.isEnabled = false
+                    }
                 }
             default:
                 break
@@ -339,7 +395,23 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         }
     }
 
+    
     @IBAction func score2plus(_ sender: Any) {
+        servNumLBL2.isHidden = false
+        if (saveServ == 0) {
+        sc1 = 0
+        }
+        if (sc2 == 0 && servNumLBL2.text == "1") {
+            servNumLBL2.text = "2"
+        } else if (sc2 == 0 && servNumLBL2.text == "2"){
+            servNumLBL2.text = "1"
+        }  else if (sc2 != 0 && servNumLBL2.text == "1"){
+            servNumLBL2.text = "1"
+        }  else if (sc2 != 0 && servNumLBL2.text == "2"){
+            servNumLBL2.text = "2"
+        }
+        sc2+=1
+        print("sc2 =", sc2)
         finalWhistleButton.isEnabled = true
         if (score2 < 99) {
         score2+=1
@@ -348,6 +420,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         score2LBL.text = NSString (format: "%i", score2) as String
             serviceBallImg.isHidden = true
             serviceBall2Img.isHidden = false
+            servNumLBL1.isHidden = true
 
         let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe2(sender:)))
         downSwipe.direction = .down
@@ -358,6 +431,13 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         score2Button.isUserInteractionEnabled = true
         score2Button.addGestureRecognizer(upSwipe)
         score2Button.addGestureRecognizer(downSwipe)
+        if (score2LBL.text == "1") {
+            select_service2.isHidden = false
+            //serviceBall2Img.isHidden = true
+        } else {
+            select_service2.isHidden = true
+        }
+        saveServ = 0
     }
     
     @objc func handleSwipe2(sender: UISwipeGestureRecognizer) {
@@ -367,11 +447,27 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                 if (score2 >= 0 && score2 < 99) {
                 score2+=1
                 score2LBL.text = NSString (format: "%i", score2) as String
+                    if (score2LBL.text == "1") {
+                        select_service2.isHidden = false
+                        serviceBall2Img.isHidden = true
+                    }
+                    else {
+                        select_service2.isHidden = true
+                    }
                 }
             case .down:
                 if (score2 > 0 && score2 <= 99) {
                 score2-=1
                 score2LBL.text = NSString (format: "%i", score2) as String
+                    if (score2LBL.text == "1") {
+                        select_service2.isHidden = false
+                        serviceBall2Img.isHidden = true
+                    } else {
+                        select_service2.isHidden = true
+                    }
+                    if (score1LBL.text == "0" && score2LBL.text == "0") {
+                        finalWhistleButton.isEnabled = false
+                    }
                 }
             default:
                 break
@@ -446,15 +542,34 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         score2LBL.text = NSString (format: "%i", score2) as String
         serviceBallImg.isHidden = true
         serviceBall2Img.isHidden = true
-        
+        servNumLBL1.text = ""
+        servNumLBL2.text = ""
     }
+    
+    var servNum = 0
+    var saveServ = 0
+    var servNumStr = ""
     func sButton() {
+        saveServ = 1
         teamlog = team1log
         team1log = team2log
         team2log = teamlog
         score = score1
         score1 = score2
         score2 = score
+        servNumStr = servNumLBL1.text!
+        servNumLBL1.text = servNumLBL2.text!
+        servNumLBL2.text = servNumStr
+        servNum = sc1
+        sc1 = sc2
+        sc2 = servNum
+        if (servNumLBL1.isHidden == true) {
+            servNumLBL1.isHidden = false
+            servNumLBL2.isHidden = true
+        } else {
+            servNumLBL1.isHidden = true
+            servNumLBL2.isHidden = false
+        }
         score1LBL.text = NSString (format: "%i", score1) as String
         score2LBL.text = NSString (format: "%i", score2) as String
         team = team1
@@ -548,6 +663,47 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     var clear = "2"
     var clear2 : String = "0"
     
+    @IBOutlet weak var select_service1: UISegmentedControl!
+    
+    @IBOutlet weak var select_service2: UISegmentedControl!
+    
+    var playerToService1 = 0
+    var playerToService2 = 0
+    
+    func selectedPlayer (segment: UISegmentedControl, image2: UIImageView, image: UIImageView) -> Int {
+        let select = segment.selectedSegmentIndex
+        var num = 0
+        switch select {
+        case 0:
+            num = 1
+        case 1:
+            num = 2
+        default:
+            print("not selected")
+        }
+        segment.isHidden = true
+        image2.isHidden = true
+        image.isHidden = false
+        return (num)
+    }
+    
+    @IBAction func selectServiceAction1(_ sender: Any) {
+        playerToService1 = selectedPlayer(segment: select_service1, image2: serviceBall2Img, image: serviceBallImg)
+        servNumLBL1.text = String (playerToService1)
+        select_service1.selectedSegmentIndex = UISegmentedControl.noSegment
+    }
+    
+    @IBAction func selectServiceAction2(_ sender: Any) {
+        playerToService2 = selectedPlayer(segment: select_service2,image2: serviceBallImg, image: serviceBall2Img)
+        servNumLBL2.text = String (playerToService2)
+        select_service2.selectedSegmentIndex = UISegmentedControl.noSegment
+    }
+    
+    @IBOutlet weak var servNumLBL1: UILabel!
+    
+    @IBOutlet weak var servNumLBL2: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         randomCoinImage.isHidden = true
@@ -559,6 +715,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         timeoutStart.isHidden = false
         timeoutStop.isHidden = true
         finalWhistleButton.isEnabled = false
+        select_service1.isHidden = true
+        select_service2.isHidden = true
         changeSides()
     }
     
