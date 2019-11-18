@@ -17,7 +17,7 @@ class IconsViewController: UIViewController {
     }
 
     @IBAction func toReadyButton(_ sender: Any) {
-         self.performSegue(withIdentifier: "secondToReady", sender: self)
+         self.performSegue (withIdentifier: "secondToReady", sender: self)
     }
     
 }

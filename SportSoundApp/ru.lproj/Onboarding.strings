@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Add colors to your game!"; ObjectID = "3xe-wL-kKd"; */
+"3xe-wL-kKd.text" = "Add colors to your game!";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "EfZ-Xm-ne6"; */
+"EfZ-Xm-ne6.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "No need to have a whistle now!"; ObjectID = "EmK-ce-I1P"; */
+"EmK-ce-I1P.text" = "No need to have a whistle now!";
+
+/* Class = "UIButton"; normalTitle = "Let's go!"; ObjectID = "LBM-cZ-akh"; */
+"LBM-cZ-akh.normalTitle" = "Let's go!";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "WYJ-rq-Wpv"; */
+"WYJ-rq-Wpv.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Don't miss the score!"; ObjectID = "xQY-wD-feS"; */
+"xQY-wD-feS.text" = "Don't miss the score!";

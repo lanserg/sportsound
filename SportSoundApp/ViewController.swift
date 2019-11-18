@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     @IBOutlet weak var SetNameLBL: UILabel!
     
-    var audioPlayer: AVAudioPlayer = AVAudioPlayer()
+    var audioPlayer: AVAudioPlayer? //= AVAudioPlayer()
     
     var name: String?
     
@@ -275,6 +275,10 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         inputTeam2.text = NSString (format: "%@", team2) as String
         serviceBallImg.isHidden = true
         serviceBall2Img.isHidden = true
+        servNumLBL1.text = ""
+        servNumLBL2.text = ""
+        select_service1.isHidden = true
+        select_service2.isHidden = true
     }
 
     var t1 = ""
@@ -523,18 +527,19 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             
         }
         else {
-       
-            self.audioPlayer.stop()
-             playPauseBTN.setImage(UIImage.init(named: "play-button"), for: .normal)
+            audioPlayer?.stop()
+            playPauseBTN.setImage(UIImage.init(named: "play-button"), for: .normal)
             DigBtn.isEnabled = true
             blockBTN.isEnabled = true
             atackBTN.isEnabled = true
             awesomeBTN.isEnabled = true
             whistleB.isEnabled = true
+             
         }
     
     }
 
+    
     func reset () {
         score1 = 0
         score2 = 0
@@ -544,11 +549,16 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         serviceBall2Img.isHidden = true
         servNumLBL1.text = ""
         servNumLBL2.text = ""
+        select_service1.isHidden = true
+        select_service2.isHidden = true
+
     }
     
     var servNum = 0
     var saveServ = 0
     var servNumStr = ""
+    
+    
     func sButton() {
         saveServ = 1
         teamlog = team1log
@@ -585,12 +595,12 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             serviceBall2Img.isHidden = false
         }
     }
-  
+
     func playSound() {
         do {
             self.audioPlayer =  try AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: Bundle.main.path(forResource: name, ofType: "mp3")!) as URL)
-            audioPlayer.delegate = self
-            self.audioPlayer.play()
+            audioPlayer!.delegate = self
+            self.audioPlayer!.play()
             let audiosession = AVAudioSession.sharedInstance()
             do {
                 try audiosession.setCategory(AVAudioSession.Category.playback)
@@ -605,7 +615,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     }
     
     @IBAction func whistleBut(_ sender: UIButton) {
-        self.audioPlayer.stop()
+        self.audioPlayer!.stop()
     }
     
     @IBAction func whistleHoldButton(_ sender: Any) {

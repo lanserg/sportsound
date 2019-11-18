@@ -202,12 +202,12 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             arrData.removeAll()
         }
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         savingData()
         getData()
-
     }
     
 }

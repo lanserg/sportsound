@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		B11F628F21FE633300363DFE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11F628E21FE633200363DFE /* SecondViewController.swift */; };
 		B13AEC9D22CF7D9200030376 /* ssapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B13AEC9B22CF7D9200030376 /* ssapp.xcdatamodeld */; };
 		B1475118233C1A09005C4339 /* whistle_long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1475117233C1A08005C4339 /* whistle_long.mp3 */; };
+		B15F923A2382A2760006B9A9 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15F923C2382A2760006B9A9 /* Onboarding.storyboard */; };
 		B16805332221388E00074350 /* whistle_orig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16805322221388E00074350 /* whistle_orig.mp3 */; };
 		B168053522213C2500074350 /* whistle_serv.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B168053422213C2500074350 /* whistle_serv.mp3 */; };
 		B168053722213CFB00074350 /* serv_whistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B168053622213CF900074350 /* serv_whistle.mp3 */; };
@@ -23,7 +24,6 @@
 		B16CDA6821E55C1800CD222C /* monsterBlock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */; };
 		B16CDA6A21E55C3300CD222C /* buzzle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6921E55C3300CD222C /* buzzle.mp3 */; };
 		B16CDA6C21E55C6800CD222C /* whistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6B21E55C6800CD222C /* whistle.mp3 */; };
-		B1C114FA2334C5BE00BB8ED5 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C114F92334C5BE00BB8ED5 /* Onboarding.storyboard */; };
 		B1C114FC23355E9600BB8ED5 /* WhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FB23355E9600BB8ED5 /* WhistleViewController.swift */; };
 		B1C114FE23355ED200BB8ED5 /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FD23355ED200BB8ED5 /* IconsViewController.swift */; };
 		B1C1150023355EF000BB8ED5 /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FF23355EF000BB8ED5 /* ReadyViewController.swift */; };
@@ -56,15 +56,14 @@
 /* Begin PBXFileReference section */
 		023DB038228459A8007D35D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1060C9122D8D059000F5646 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		B1060C9222D8D1CC000F5646 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
-		B1060C9422D8D1DB000F5646 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
-		B1060C9622D8D1F2000F5646 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		B116A2DE22E24C31004ECE1D /* cheer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cheer.mp3; sourceTree = "<group>"; };
 		B11F628E21FE633200363DFE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B13AEC9C22CF7D9200030376 /* ssapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ssapp.xcdatamodel; sourceTree = "<group>"; };
 		B1475117233C1A08005C4339 /* whistle_long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_long.mp3; sourceTree = "<group>"; };
-		B152EB5722BBBAF30078F094 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		B1560B1022B94309007E2EDE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		B15F923B2382A2760006B9A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
+		B15F923E2382A3050006B9A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Onboarding.strings; sourceTree = "<group>"; };
+		B15F92402382A3080006B9A9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Onboarding.strings; sourceTree = "<group>"; };
 		B16805322221388E00074350 /* whistle_orig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_orig.mp3; sourceTree = "<group>"; };
 		B168053422213C2500074350 /* whistle_serv.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_serv.mp3; sourceTree = "<group>"; };
 		B168053622213CF900074350 /* serv_whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = serv_whistle.mp3; sourceTree = "<group>"; };
@@ -76,8 +75,6 @@
 		B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monsterBlock.mp3; sourceTree = "<group>"; };
 		B16CDA6921E55C3300CD222C /* buzzle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buzzle.mp3; sourceTree = "<group>"; };
 		B16CDA6B21E55C6800CD222C /* whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle.mp3; sourceTree = "<group>"; };
-		B1BF806522BA5B7900D38D0C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		B1C114F92334C5BE00BB8ED5 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		B1C114FB23355E9600BB8ED5 /* WhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistleViewController.swift; sourceTree = "<group>"; };
 		B1C114FD23355ED200BB8ED5 /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
 		B1C114FF23355EF000BB8ED5 /* ReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
@@ -167,14 +164,14 @@
 		B1E06D2621E3E8B2008C361A /* SportSoundApp */ = {
 			isa = PBXGroup;
 			children = (
-				023DB037228459A8007D35D1 /* Main.storyboard */,
-				B1E06D2721E3E8B2008C361A /* AppDelegate.swift */,
 				B1E06D2921E3E8B2008C361A /* ViewController.swift */,
-				B1C114F92334C5BE00BB8ED5 /* Onboarding.storyboard */,
+				B11F628E21FE633200363DFE /* SecondViewController.swift */,
+				B1E06D2721E3E8B2008C361A /* AppDelegate.swift */,
+				023DB037228459A8007D35D1 /* Main.storyboard */,
+				B15F923C2382A2760006B9A9 /* Onboarding.storyboard */,
 				B1C114FB23355E9600BB8ED5 /* WhistleViewController.swift */,
 				B1C114FD23355ED200BB8ED5 /* IconsViewController.swift */,
 				B1C114FF23355EF000BB8ED5 /* ReadyViewController.swift */,
-				B11F628E21FE633200363DFE /* SecondViewController.swift */,
 				B1E06D2E21E3E8BD008C361A /* Assets.xcassets */,
 				B1E06D3321E3E8BD008C361A /* Info.plist */,
 				B16970192328E64D00B3B961 /* Sounds */,
@@ -285,18 +282,13 @@
 				};
 			};
 			buildConfigurationList = B1E06D1F21E3E8B1008C361A /* Build configuration list for PBXProject "SportSoundApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 				ru,
-				es,
-				fr,
-				de,
-				"zh-Hant",
-				it,
 			);
 			mainGroup = B1E06D1B21E3E8B1008C361A;
 			productRefGroup = B1E06D2521E3E8B2008C361A /* Products */;
@@ -330,7 +322,7 @@
 				B116A2DF22E24C32004ECE1D /* cheer.mp3 in Resources */,
 				B1E33E8F21E40CCF0006ED59 /* magic.mp3 in Resources */,
 				B169701F2328F2FA00B3B961 /* soundOfTimeout2.mp3 in Resources */,
-				B1C114FA2334C5BE00BB8ED5 /* Onboarding.storyboard in Resources */,
+				B15F923A2382A2760006B9A9 /* Onboarding.storyboard in Resources */,
 				B1E06D2F21E3E8BD008C361A /* Assets.xcassets in Resources */,
 				B1C18BE823265A8A0019BF15 /* soundOfTimeout.mp3 in Resources */,
 			);
@@ -404,14 +396,20 @@
 			children = (
 				023DB038228459A8007D35D1 /* Base */,
 				B1560B1022B94309007E2EDE /* ru */,
-				B1BF806522BA5B7900D38D0C /* es */,
-				B152EB5722BBBAF30078F094 /* fr */,
 				B1060C9122D8D059000F5646 /* en */,
-				B1060C9222D8D1CC000F5646 /* de */,
-				B1060C9422D8D1DB000F5646 /* zh-Hant */,
-				B1060C9622D8D1F2000F5646 /* it */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B15F923C2382A2760006B9A9 /* Onboarding.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B15F923B2382A2760006B9A9 /* Base */,
+				B15F923E2382A3050006B9A9 /* en */,
+				B15F92402382A3080006B9A9 /* ru */,
+			);
+			name = Onboarding.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -469,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -525,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -542,7 +540,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X24JXQT969;
 				INFOPLIST_FILE = SportSoundApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,7 +548,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = First.SportSoundApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -561,7 +559,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X24JXQT969;
 				INFOPLIST_FILE = SportSoundApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,7 +567,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = First.SportSoundApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
