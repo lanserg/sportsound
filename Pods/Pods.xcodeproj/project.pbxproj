@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C1578E057AD04EF622D5E83D8AE571 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1E1F04ACDBDAB7E8E045DB84AF147D1B /* Pods-SportSoundAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB3CFE3151187C9203EEE7876CBDA87 /* Pods-SportSoundAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32E11C68B7E380DAF57756919DFC2BB0 /* PopTip+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A245456AAAD115FDFE4BFEB9A08B0C74 /* PopTip+Transitions.swift */; };
+		387E5709D528364FEDDBFA09C66EA9C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5CE944B24E92F75283808185B053CA33 /* PopTip+Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F433E9B70F6AD40F19186015C67305 /* PopTip+Draw.swift */; };
+		6B711829635DE0124AAD400294679DA4 /* AMPopTip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE86BBBD5311B58F4C25B793BD2CB1E3 /* AMPopTip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85D5C597E5A1C66586CE08A4BFC7F885 /* PopTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA681F56A546A4D0C99623287F0836B /* PopTip.swift */; };
+		9547CB19FDE142845886215F8292743C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C1B6091ED1FE500D66A45F52BBD1A2BF /* Pods-SportSoundAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B6A651E8564A1F04E5F3595178B85A /* Pods-SportSoundAppTests-dummy.m */; };
+		C9F886A51BD4D81DF218EFBDB46FE5DE /* Pods-SportSoundApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9E314273902FA35056F04402DA3641 /* Pods-SportSoundApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD5EFC39DBAB8DE73B1137C2E00092EE /* Pods-SportSoundApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D9A560A1575D158B2DAF522C83BACD /* Pods-SportSoundApp-dummy.m */; };
+		E68FCDC3550B6EE493A15BE22237576D /* AMPopTip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CD81A19F4CAA87F6216299CEC9810 /* AMPopTip-dummy.m */; };
+		EFCE79F9B1CFB8B580303A92DD381AB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F5F88A0F71BEF707A85DA263A0B2B959 /* Pods-SportSoundApp-SportSoundAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 568D690AB49FC294DE638106FC5ED4CA /* Pods-SportSoundApp-SportSoundAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6729E488BBAF9427917DB7DF26EB680 /* Pods-SportSoundApp-SportSoundAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D41F0B217796D68C7AE8FB68663F24 /* Pods-SportSoundApp-SportSoundAppUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21B363B0FEF1A3666577FF1163BACDDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B974B55B3C5F71E53DF6070DC0CF6CF;
+			remoteInfo = AMPopTip;
+		};
+		C60B595A485B9567C3C918A5230B5074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 123EEDB0915551AAA006DFFF4AD764A5;
+			remoteInfo = "Pods-SportSoundApp";
+		};
+		F974509D60D5231260AC4BEEBB4C917C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B974B55B3C5F71E53DF6070DC0CF6CF;
+			remoteInfo = AMPopTip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08EE33FE2EC7EB2098B9427718B1572B /* Pods_SportSoundApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SportSoundApp.framework; path = "Pods-SportSoundApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3E9A126356B05A51C4C53B7AD9992D /* AMPopTip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMPopTip.xcconfig; sourceTree = "<group>"; };
+		2DA681F56A546A4D0C99623287F0836B /* PopTip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopTip.swift; path = Source/PopTip.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		470CD81A19F4CAA87F6216299CEC9810 /* AMPopTip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMPopTip-dummy.m"; sourceTree = "<group>"; };
+		4CB3CFE3151187C9203EEE7876CBDA87 /* Pods-SportSoundAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SportSoundAppTests-umbrella.h"; sourceTree = "<group>"; };
+		5208A0D8ED0D8C60116B1E7F425C6E1C /* Pods-SportSoundApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportSoundApp-Info.plist"; sourceTree = "<group>"; };
+		5425141B9EBC3DF3685BE5C9E49B4497 /* Pods_SportSoundAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SportSoundAppTests.framework; path = "Pods-SportSoundAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		568D690AB49FC294DE638106FC5ED4CA /* Pods-SportSoundApp-SportSoundAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SportSoundApp-SportSoundAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		5F0A225E021394C7CF861E72CAD8EBF3 /* AMPopTip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMPopTip-prefix.pch"; sourceTree = "<group>"; };
+		6AF27198B1231245C76DE1ABC6908F38 /* Pods-SportSoundAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportSoundAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B26A56EDA7EF8F01D730DAF1E1027A1 /* Pods-SportSoundApp-SportSoundAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportSoundApp-SportSoundAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		70D41F0B217796D68C7AE8FB68663F24 /* Pods-SportSoundApp-SportSoundAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SportSoundApp-SportSoundAppUITests-dummy.m"; sourceTree = "<group>"; };
+		73F3064FC0E58BD621DE53DF39A22367 /* Pods-SportSoundApp-SportSoundAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportSoundApp-SportSoundAppUITests-Info.plist"; sourceTree = "<group>"; };
+		745FB2267F0CE58E29D167E960CB9AEF /* Pods-SportSoundApp-SportSoundAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SportSoundApp-SportSoundAppUITests.modulemap"; sourceTree = "<group>"; };
+		82A84EE1198925A59284806D0C783E05 /* Pods-SportSoundAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SportSoundAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8593E0FD3EC2BF1DA6546319BBD4CC01 /* Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		859E4BC73ED8F251BCB89FE26D329FB1 /* Pods-SportSoundAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportSoundAppTests-Info.plist"; sourceTree = "<group>"; };
+		8C95D72193B8B0961AE8D60FA1D3F419 /* AMPopTip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AMPopTip.framework; path = AMPopTip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB2C98197253737236A5DA85165C0C4 /* Pods-SportSoundApp-SportSoundAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportSoundApp-SportSoundAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9236381DD7AF0AC01CCF8F0D624D5AEC /* Pods-SportSoundApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportSoundApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		94C261837F88CA5DCE34EF7E18820058 /* Pods-SportSoundAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportSoundAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		95519F5DEEBDD8251B18BC1D0F773508 /* Pods_SportSoundApp_SportSoundAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SportSoundApp_SportSoundAppUITests.framework; path = "Pods-SportSoundApp-SportSoundAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9607AEE5BEA8BA4278D8C8F52C3BFE7D /* Pods-SportSoundApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportSoundApp.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A245456AAAD115FDFE4BFEB9A08B0C74 /* PopTip+Transitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopTip+Transitions.swift"; path = "Source/PopTip+Transitions.swift"; sourceTree = "<group>"; };
+		AA0A6612BA6C30EF41AC8AB7D417C184 /* AMPopTip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AMPopTip.modulemap; sourceTree = "<group>"; };
+		AC9E314273902FA35056F04402DA3641 /* Pods-SportSoundApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SportSoundApp-umbrella.h"; sourceTree = "<group>"; };
+		B03606D9845A30E56B6EA5C2DC5D9ECE /* Pods-SportSoundAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SportSoundAppTests.modulemap"; sourceTree = "<group>"; };
+		C2F433E9B70F6AD40F19186015C67305 /* PopTip+Draw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopTip+Draw.swift"; path = "Source/PopTip+Draw.swift"; sourceTree = "<group>"; };
+		D3413BD97E2315B607C2D1049CFDD9A6 /* Pods-SportSoundApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportSoundApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D6763E428FC3170D2F1941CAF65EED60 /* Pods-SportSoundApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SportSoundApp.modulemap"; sourceTree = "<group>"; };
+		DD0E7AD096A4AD70DDDECDC5E2E171D3 /* Pods-SportSoundApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SportSoundApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DE86BBBD5311B58F4C25B793BD2CB1E3 /* AMPopTip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMPopTip-umbrella.h"; sourceTree = "<group>"; };
+		E3D9A560A1575D158B2DAF522C83BACD /* Pods-SportSoundApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SportSoundApp-dummy.m"; sourceTree = "<group>"; };
+		F02965B186D6CD90F4C8EA9D0D924BF8 /* AMPopTip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AMPopTip-Info.plist"; sourceTree = "<group>"; };
+		F3DEDE8F7D7C32957A47A432A0C3DEF0 /* Pods-SportSoundAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportSoundAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4B6A651E8564A1F04E5F3595178B85A /* Pods-SportSoundAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SportSoundAppTests-dummy.m"; sourceTree = "<group>"; };
+		FAD0D9528E9840EAD20ECE3882BB000F /* Pods-SportSoundApp-SportSoundAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SportSoundApp-SportSoundAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC278A8FC4F0ACFC8742BA2F195640B5 /* Pods-SportSoundApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SportSoundApp-frameworks.sh"; sourceTree = "<group>"; };
+		FDD9EF40BA700330B2C16B3492568F4A /* Pods-SportSoundApp-SportSoundAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SportSoundApp-SportSoundAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C560D592D0C656CD79D14C83659EE7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				387E5709D528364FEDDBFA09C66EA9C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653D55E43864178BA96588A9ABF5F428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C1578E057AD04EF622D5E83D8AE571 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7496AA0F9C0AFCFDB7C9AC94228777FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9547CB19FDE142845886215F8292743C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AECF0A4114D45441A3647FBB5722BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCE79F9B1CFB8B580303A92DD381AB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11E23AB81B8F15A21B7D9733B014C08E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C95D72193B8B0961AE8D60FA1D3F419 /* AMPopTip.framework */,
+				08EE33FE2EC7EB2098B9427718B1572B /* Pods_SportSoundApp.framework */,
+				95519F5DEEBDD8251B18BC1D0F773508 /* Pods_SportSoundApp_SportSoundAppUITests.framework */,
+				5425141B9EBC3DF3685BE5C9E49B4497 /* Pods_SportSoundAppTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34415A83C362C22A621B13C3F71FA4EF /* Pods-SportSoundApp-SportSoundAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				745FB2267F0CE58E29D167E960CB9AEF /* Pods-SportSoundApp-SportSoundAppUITests.modulemap */,
+				FAD0D9528E9840EAD20ECE3882BB000F /* Pods-SportSoundApp-SportSoundAppUITests-acknowledgements.markdown */,
+				6B26A56EDA7EF8F01D730DAF1E1027A1 /* Pods-SportSoundApp-SportSoundAppUITests-acknowledgements.plist */,
+				70D41F0B217796D68C7AE8FB68663F24 /* Pods-SportSoundApp-SportSoundAppUITests-dummy.m */,
+				FDD9EF40BA700330B2C16B3492568F4A /* Pods-SportSoundApp-SportSoundAppUITests-frameworks.sh */,
+				73F3064FC0E58BD621DE53DF39A22367 /* Pods-SportSoundApp-SportSoundAppUITests-Info.plist */,
+				568D690AB49FC294DE638106FC5ED4CA /* Pods-SportSoundApp-SportSoundAppUITests-umbrella.h */,
+				8FB2C98197253737236A5DA85165C0C4 /* Pods-SportSoundApp-SportSoundAppUITests.debug.xcconfig */,
+				8593E0FD3EC2BF1DA6546319BBD4CC01 /* Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig */,
+			);
+			name = "Pods-SportSoundApp-SportSoundAppUITests";
+			path = "Target Support Files/Pods-SportSoundApp-SportSoundAppUITests";
+			sourceTree = "<group>";
+		};
+		44B1E50409BE651C1872417566B76DC3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A6612BA6C30EF41AC8AB7D417C184 /* AMPopTip.modulemap */,
+				2D3E9A126356B05A51C4C53B7AD9992D /* AMPopTip.xcconfig */,
+				470CD81A19F4CAA87F6216299CEC9810 /* AMPopTip-dummy.m */,
+				F02965B186D6CD90F4C8EA9D0D924BF8 /* AMPopTip-Info.plist */,
+				5F0A225E021394C7CF861E72CAD8EBF3 /* AMPopTip-prefix.pch */,
+				DE86BBBD5311B58F4C25B793BD2CB1E3 /* AMPopTip-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AMPopTip";
+			sourceTree = "<group>";
+		};
+		74F0B3970ED339AC3DCC6FBE408EDF8D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7526E07EC83FE3EFC8ADD48F8CDF0F9 /* Pods-SportSoundApp */,
+				34415A83C362C22A621B13C3F71FA4EF /* Pods-SportSoundApp-SportSoundAppUITests */,
+				B87A9EFEC2A4435449CC58552400E4C3 /* Pods-SportSoundAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8CF01C317831EF4551E8CCA8761F17E8 /* AMPopTip */ = {
+			isa = PBXGroup;
+			children = (
+				2DA681F56A546A4D0C99623287F0836B /* PopTip.swift */,
+				C2F433E9B70F6AD40F19186015C67305 /* PopTip+Draw.swift */,
+				A245456AAAD115FDFE4BFEB9A08B0C74 /* PopTip+Transitions.swift */,
+				44B1E50409BE651C1872417566B76DC3 /* Support Files */,
+			);
+			name = AMPopTip;
+			path = AMPopTip;
+			sourceTree = "<group>";
+		};
+		B87A9EFEC2A4435449CC58552400E4C3 /* Pods-SportSoundAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B03606D9845A30E56B6EA5C2DC5D9ECE /* Pods-SportSoundAppTests.modulemap */,
+				82A84EE1198925A59284806D0C783E05 /* Pods-SportSoundAppTests-acknowledgements.markdown */,
+				6AF27198B1231245C76DE1ABC6908F38 /* Pods-SportSoundAppTests-acknowledgements.plist */,
+				F4B6A651E8564A1F04E5F3595178B85A /* Pods-SportSoundAppTests-dummy.m */,
+				859E4BC73ED8F251BCB89FE26D329FB1 /* Pods-SportSoundAppTests-Info.plist */,
+				4CB3CFE3151187C9203EEE7876CBDA87 /* Pods-SportSoundAppTests-umbrella.h */,
+				94C261837F88CA5DCE34EF7E18820058 /* Pods-SportSoundAppTests.debug.xcconfig */,
+				F3DEDE8F7D7C32957A47A432A0C3DEF0 /* Pods-SportSoundAppTests.release.xcconfig */,
+			);
+			name = "Pods-SportSoundAppTests";
+			path = "Target Support Files/Pods-SportSoundAppTests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D3960C017DA518B4D25EB86AB2117A13 /* Pods */,
+				11E23AB81B8F15A21B7D9733B014C08E /* Products */,
+				74F0B3970ED339AC3DCC6FBE408EDF8D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3960C017DA518B4D25EB86AB2117A13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CF01C317831EF4551E8CCA8761F17E8 /* AMPopTip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7526E07EC83FE3EFC8ADD48F8CDF0F9 /* Pods-SportSoundApp */ = {
+			isa = PBXGroup;
+			children = (
+				D6763E428FC3170D2F1941CAF65EED60 /* Pods-SportSoundApp.modulemap */,
+				DD0E7AD096A4AD70DDDECDC5E2E171D3 /* Pods-SportSoundApp-acknowledgements.markdown */,
+				9236381DD7AF0AC01CCF8F0D624D5AEC /* Pods-SportSoundApp-acknowledgements.plist */,
+				E3D9A560A1575D158B2DAF522C83BACD /* Pods-SportSoundApp-dummy.m */,
+				FC278A8FC4F0ACFC8742BA2F195640B5 /* Pods-SportSoundApp-frameworks.sh */,
+				5208A0D8ED0D8C60116B1E7F425C6E1C /* Pods-SportSoundApp-Info.plist */,
+				AC9E314273902FA35056F04402DA3641 /* Pods-SportSoundApp-umbrella.h */,
+				D3413BD97E2315B607C2D1049CFDD9A6 /* Pods-SportSoundApp.debug.xcconfig */,
+				9607AEE5BEA8BA4278D8C8F52C3BFE7D /* Pods-SportSoundApp.release.xcconfig */,
+			);
+			name = "Pods-SportSoundApp";
+			path = "Target Support Files/Pods-SportSoundApp";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DFC75B2FDBE15AAC8DF48F4F9CAF476 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B711829635DE0124AAD400294679DA4 /* AMPopTip-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DA5C58BC5C81A6E6F59BEA23EA552A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F88A0F71BEF707A85DA263A0B2B959 /* Pods-SportSoundApp-SportSoundAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		878669B75BA42E9B9C037130A77FBF31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F886A51BD4D81DF218EFBDB46FE5DE /* Pods-SportSoundApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDDCF97417215B763BB2E53CDB27216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E1F04ACDBDAB7E8E045DB84AF147D1B /* Pods-SportSoundAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B974B55B3C5F71E53DF6070DC0CF6CF /* AMPopTip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6A879FE025A74D62A8577AB2E59ADF0 /* Build configuration list for PBXNativeTarget "AMPopTip" */;
+			buildPhases = (
+				3DFC75B2FDBE15AAC8DF48F4F9CAF476 /* Headers */,
+				6478C237A8BADB27997BC15995B3507E /* Sources */,
+				7496AA0F9C0AFCFDB7C9AC94228777FD /* Frameworks */,
+				4D0FBE764F63D49C4492EED3F2537384 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMPopTip;
+			productName = AMPopTip;
+			productReference = 8C95D72193B8B0961AE8D60FA1D3F419 /* AMPopTip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		123EEDB0915551AAA006DFFF4AD764A5 /* Pods-SportSoundApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AAB28A0B54CE1BC571658AE8319B592 /* Build configuration list for PBXNativeTarget "Pods-SportSoundApp" */;
+			buildPhases = (
+				878669B75BA42E9B9C037130A77FBF31 /* Headers */,
+				63D9CED77F8CF7ABA8A730804C67A665 /* Sources */,
+				8AECF0A4114D45441A3647FBB5722BD2 /* Frameworks */,
+				D5F9C2A496070675BE8D947102F4EB51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AC82B4EBC04DAA1B37EEAA4751A2BC0 /* PBXTargetDependency */,
+			);
+			name = "Pods-SportSoundApp";
+			productName = "Pods-SportSoundApp";
+			productReference = 08EE33FE2EC7EB2098B9427718B1572B /* Pods_SportSoundApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3767380821DB9A25CC22237A42921C24 /* Pods-SportSoundAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52819F733067AC88807824A0566F576F /* Build configuration list for PBXNativeTarget "Pods-SportSoundAppTests" */;
+			buildPhases = (
+				AEDDCF97417215B763BB2E53CDB27216 /* Headers */,
+				118D29C273AAF1EB210953CEE9619DB7 /* Sources */,
+				2C560D592D0C656CD79D14C83659EE7B /* Frameworks */,
+				DB1DF30EEDD92B34E4EDE2CC499937A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36E10852553E9CF599C22A0F9E255DA9 /* PBXTargetDependency */,
+			);
+			name = "Pods-SportSoundAppTests";
+			productName = "Pods-SportSoundAppTests";
+			productReference = 5425141B9EBC3DF3685BE5C9E49B4497 /* Pods_SportSoundAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4038ABF24136C616DA936B03C8F36B20 /* Pods-SportSoundApp-SportSoundAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED99B630BB18D91C3141CC01C49B7DA /* Build configuration list for PBXNativeTarget "Pods-SportSoundApp-SportSoundAppUITests" */;
+			buildPhases = (
+				65DA5C58BC5C81A6E6F59BEA23EA552A /* Headers */,
+				0A5DA248A73A9B33D874445B7CBE3EC5 /* Sources */,
+				653D55E43864178BA96588A9ABF5F428 /* Frameworks */,
+				100E384F1A84F7E7C6D9C2D377C43E12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFCD70FD536F8EEEF5DB587F00DA5CCF /* PBXTargetDependency */,
+			);
+			name = "Pods-SportSoundApp-SportSoundAppUITests";
+			productName = "Pods-SportSoundApp-SportSoundAppUITests";
+			productReference = 95519F5DEEBDD8251B18BC1D0F773508 /* Pods_SportSoundApp_SportSoundAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 11E23AB81B8F15A21B7D9733B014C08E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B974B55B3C5F71E53DF6070DC0CF6CF /* AMPopTip */,
+				123EEDB0915551AAA006DFFF4AD764A5 /* Pods-SportSoundApp */,
+				4038ABF24136C616DA936B03C8F36B20 /* Pods-SportSoundApp-SportSoundAppUITests */,
+				3767380821DB9A25CC22237A42921C24 /* Pods-SportSoundAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100E384F1A84F7E7C6D9C2D377C43E12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0FBE764F63D49C4492EED3F2537384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F9C2A496070675BE8D947102F4EB51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1DF30EEDD92B34E4EDE2CC499937A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A5DA248A73A9B33D874445B7CBE3EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6729E488BBAF9427917DB7DF26EB680 /* Pods-SportSoundApp-SportSoundAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118D29C273AAF1EB210953CEE9619DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B6091ED1FE500D66A45F52BBD1A2BF /* Pods-SportSoundAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D9CED77F8CF7ABA8A730804C67A665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5EFC39DBAB8DE73B1137C2E00092EE /* Pods-SportSoundApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6478C237A8BADB27997BC15995B3507E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68FCDC3550B6EE493A15BE22237576D /* AMPopTip-dummy.m in Sources */,
+				5CE944B24E92F75283808185B053CA33 /* PopTip+Draw.swift in Sources */,
+				32E11C68B7E380DAF57756919DFC2BB0 /* PopTip+Transitions.swift in Sources */,
+				85D5C597E5A1C66586CE08A4BFC7F885 /* PopTip.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36E10852553E9CF599C22A0F9E255DA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SportSoundApp";
+			target = 123EEDB0915551AAA006DFFF4AD764A5 /* Pods-SportSoundApp */;
+			targetProxy = C60B595A485B9567C3C918A5230B5074 /* PBXContainerItemProxy */;
+		};
+		3AC82B4EBC04DAA1B37EEAA4751A2BC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AMPopTip;
+			target = 0B974B55B3C5F71E53DF6070DC0CF6CF /* AMPopTip */;
+			targetProxy = F974509D60D5231260AC4BEEBB4C917C /* PBXContainerItemProxy */;
+		};
+		CFCD70FD536F8EEEF5DB587F00DA5CCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AMPopTip;
+			target = 0B974B55B3C5F71E53DF6070DC0CF6CF /* AMPopTip */;
+			targetProxy = 21B363B0FEF1A3666577FF1163BACDDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		49D1FC0734B7F231446EDF7F17F65630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9607AEE5BEA8BA4278D8C8F52C3BFE7D /* Pods-SportSoundApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A7552D89A0633450D00D572B760EF241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D3E9A126356B05A51C4C53B7AD9992D /* AMPopTip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AMPopTip/AMPopTip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AMPopTip/AMPopTip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AMPopTip/AMPopTip.modulemap";
+				PRODUCT_MODULE_NAME = AMPopTip;
+				PRODUCT_NAME = AMPopTip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B273CE99E586486C92071DF94670AFF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C261837F88CA5DCE34EF7E18820058 /* Pods-SportSoundAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportSoundAppTests/Pods-SportSoundAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportSoundAppTests/Pods-SportSoundAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C72172F776153836816AF515B673DE9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D3E9A126356B05A51C4C53B7AD9992D /* AMPopTip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AMPopTip/AMPopTip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AMPopTip/AMPopTip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AMPopTip/AMPopTip.modulemap";
+				PRODUCT_MODULE_NAME = AMPopTip;
+				PRODUCT_NAME = AMPopTip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA139D97EAB3F7853A5686978C5B3F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB2C98197253737236A5DA85165C0C4 /* Pods-SportSoundApp-SportSoundAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportSoundApp-SportSoundAppUITests/Pods-SportSoundApp-SportSoundAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportSoundApp-SportSoundAppUITests/Pods-SportSoundApp-SportSoundAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD976140540A012F219FF112FB09FAA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3413BD97E2315B607C2D1049CFDD9A6 /* Pods-SportSoundApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1F4EBC9BE0879BA2CB99B8DA6EC197F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8593E0FD3EC2BF1DA6546319BBD4CC01 /* Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportSoundApp-SportSoundAppUITests/Pods-SportSoundApp-SportSoundAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportSoundApp-SportSoundAppUITests/Pods-SportSoundApp-SportSoundAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1DC529839823BBB327A616A4B4D2C70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3DEDE8F7D7C32957A47A432A0C3DEF0 /* Pods-SportSoundAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportSoundAppTests/Pods-SportSoundAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportSoundAppTests/Pods-SportSoundAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AAB28A0B54CE1BC571658AE8319B592 /* Build configuration list for PBXNativeTarget "Pods-SportSoundApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD976140540A012F219FF112FB09FAA3 /* Debug */,
+				49D1FC0734B7F231446EDF7F17F65630 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ED99B630BB18D91C3141CC01C49B7DA /* Build configuration list for PBXNativeTarget "Pods-SportSoundApp-SportSoundAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA139D97EAB3F7853A5686978C5B3F19 /* Debug */,
+				E1F4EBC9BE0879BA2CB99B8DA6EC197F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52819F733067AC88807824A0566F576F /* Build configuration list for PBXNativeTarget "Pods-SportSoundAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B273CE99E586486C92071DF94670AFF4 /* Debug */,
+				F1DC529839823BBB327A616A4B4D2C70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6A879FE025A74D62A8577AB2E59ADF0 /* Build configuration list for PBXNativeTarget "AMPopTip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C72172F776153836816AF515B673DE9B /* Debug */,
+				A7552D89A0633450D00D572B760EF241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

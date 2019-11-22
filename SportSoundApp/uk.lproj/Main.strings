@@ -1,0 +1,51 @@
+
+/* Class = "UILabel"; text = "0"; ObjectID = "4tE-4v-4sy"; */
+"4tE-4v-4sy.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "Share"; ObjectID = "Bwf-4u-EEf"; */
+"Bwf-4u-EEf.normalTitle" = "Share";
+
+/* Class = "UILabel"; text = "Stats"; ObjectID = "JHt-0D-yLi"; */
+"JHt-0D-yLi.text" = "Результати";
+
+/* Class = "UILabel"; text = "SET"; ObjectID = "NJa-M4-Ngo"; */
+"NJa-M4-Ngo.text" = "Партія";
+
+/* Class = "UITextField"; placeholder = "Team name"; ObjectID = "O6k-bh-PQ2"; */
+"O6k-bh-PQ2.placeholder" = "Команда 1";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "UvE-S8-DOq"; */
+"UvE-S8-DOq.text" = "0";
+
+/* Class = "UINavigationItem"; title = "Log"; ObjectID = "WlA-mO-t7N"; */
+"WlA-mO-t7N.title" = "Log";
+
+/* Class = "UISegmentedControl"; ZQs-fh-7gb.segmentTitles[0] = "1"; ObjectID = "ZQs-fh-7gb"; */
+"ZQs-fh-7gb.segmentTitles[0]" = "1";
+
+/* Class = "UISegmentedControl"; ZQs-fh-7gb.segmentTitles[1] = "2"; ObjectID = "ZQs-fh-7gb"; */
+"ZQs-fh-7gb.segmentTitles[1]" = "2";
+
+/* Class = "UINavigationItem"; title = "VolleyApp"; ObjectID = "bBb-QW-wyF"; */
+"bBb-QW-wyF.title" = "VolleyApp";
+
+/* Class = "UITextField"; placeholder = "Team name"; ObjectID = "cjn-K0-7mE"; */
+"cjn-K0-7mE.placeholder" = "Команда 2";
+
+/* Class = "UISegmentedControl"; eTU-pO-cPs.segmentTitles[0] = "1"; ObjectID = "eTU-pO-cPs"; */
+"eTU-pO-cPs.segmentTitles[0]" = "1";
+
+/* Class = "UISegmentedControl"; eTU-pO-cPs.segmentTitles[1] = "2"; ObjectID = "eTU-pO-cPs"; */
+"eTU-pO-cPs.segmentTitles[1]" = "2";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kdG-Z9-6fJ"; */
+"kdG-Z9-6fJ.text" = "Label";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "t8W-4O-Orb"; */
+"t8W-4O-Orb.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tD0-uM-8bS"; */
+"tD0-uM-8bS.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "u33-5J-D9t"; */
+"u33-5J-D9t.text" = "1";

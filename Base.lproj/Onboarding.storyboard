@@ -233,7 +233,7 @@
                                     <constraint firstAttribute="height" constant="145" id="PCz-xA-I2Z"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add funny colors to the game!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ery-hY-8ML">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't miss the score!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ery-hY-8ML">
                                 <rect key="frame" x="62" y="295.5" width="290" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="oTK-NO-qx6"/>

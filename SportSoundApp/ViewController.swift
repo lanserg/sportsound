@@ -9,8 +9,13 @@
 import UIKit
 import AVFoundation
 import AudioToolbox
+import AMPopTip
 
 class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelegate {
+    
+    let popTip = PopTip()
+    
+    var tipNumber = 0
     
     @IBOutlet weak var SetNameLBL: UILabel!
     
@@ -54,7 +59,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
 
     @IBOutlet weak var finalWhistleButton: UIButton!
     
-
+    @IBOutlet weak var randomB: UIButton!
+    
     
     @IBAction func swipeDown(_ sender: Any) {
     }
@@ -144,9 +150,9 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     func addingToMain() {
         let match = Match (score: "  \(toSecondViewSets)", setscore: "  \(toSecondViewScore)", teamnames: " \(toSecondViewTeams)")
-        arrayOfData.append(match.teamnames)
-        arrayOfData.append(match.score)
         arrayOfData.append(match.setscore)
+        arrayOfData.append(match.score)
+        arrayOfData.append(match.teamnames)
     }
     
     func changeSides () {
@@ -202,10 +208,10 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     }
    
     @IBAction func finalWhistleAction(_ sender: Any) {
+        if (score1 != score2) {
+        let dialogMessage = UIAlertController(title: NSLocalizedString("End of:", comment: ""), message: "", preferredStyle: .alert)
         
-        let dialogMessage = UIAlertController(title: "End of:", message: "", preferredStyle: .alert)
-        
-        let set = UIAlertAction(title: "Set", style: .default, handler: { (action) -> Void in
+        let set = UIAlertAction(title: NSLocalizedString("Set", comment: ""), style: .default, handler: { (action) -> Void in
             print("Set button tapped")
             if (self.score1 > 0 && (self.score1 > self.score2)) {
                 self.team1log+=1
@@ -217,7 +223,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             self.reset()
         })
         
-        let match = UIAlertAction(title: "Match", style: .default, handler:  { (action) -> Void in
+        let match = UIAlertAction(title: NSLocalizedString("Match", comment: ""), style: .default, handler:  { (action) -> Void in
             print("Match button tapped")
             if (self.score1 > 0 && (self.score1 > self.score2)) {
                 self.team1log+=1
@@ -240,6 +246,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         }
      
         finalWhistleButton.isEnabled = false
+        }
     }
 
     @objc func alertControllerBackgroundTapped()
@@ -713,6 +720,262 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     @IBOutlet weak var servNumLBL2: UILabel!
     
+    @IBOutlet weak var screenLBL: UILabel!
+    
+  /*  var bounds: CGRect = UIScreen.main.bounds
+    lazy var w:Int  = Int(self.bounds.size.width)
+    lazy var h:Int  = Int(self.bounds.size.height)
+   */
+    func redim () {
+        inputTeam1.backgroundColor = .white
+        inputTeam2.backgroundColor = .white
+        whistleB.backgroundColor = .white
+        randomB.backgroundColor = .white
+        finalWhistleButton.backgroundColor = .white
+        timeoutStart.backgroundColor = .white
+        resetButton.backgroundColor = .white
+        timeoutStop.backgroundColor = .white
+        
+        DigBtn.isEnabled = true
+        blockBTN.isEnabled = true
+        atackBTN.isEnabled = true
+        awesomeBTN.isEnabled = true
+        whistleB.isEnabled = true
+        setButton.isEnabled = true
+        score1Button.isEnabled = true
+        score2Button.isEnabled = true
+        //score1LBL.isEnabled = true
+        //score2LBL.isEnabled = true
+        resetButton.isEnabled = true
+        randomB.isEnabled = true
+        timeoutStop.isEnabled = true
+        timeoutStart.isEnabled = true
+        switchButton.isEnabled = true
+        playPauseBTN.isEnabled = true
+    }
+    
+    func dim () {
+        view.backgroundColor = UIColor(red:0.89, green:0.89, blue:0.89, alpha:1.0)
+
+        inputTeam1.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
+        inputTeam2.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
+        whistleB.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
+        randomB.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
+        finalWhistleButton.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
+        timeoutStart.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
+        resetButton.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
+        timeoutStop.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
+        
+        DigBtn.isEnabled = false
+        blockBTN.isEnabled = false
+        atackBTN.isEnabled = false
+        awesomeBTN.isEnabled = false
+        whistleB.isEnabled = false
+        setButton.isEnabled = false
+        select_service1.isHidden = true
+        select_service2.isHidden = true
+        score1Button.isEnabled = false
+        score2Button.isEnabled = false
+        resetButton.isEnabled = false
+        randomB.isEnabled = false
+        timeoutStop.isEnabled = false
+        timeoutStart.isEnabled = false
+        switchButton.isEnabled = false
+        playPauseBTN.isEnabled = false
+        
+        if (finalWhistleButton.isEnabled == true) {
+            fvb = 1
+            finalWhistleButton.isEnabled = false
+        }
+    }
+    var fvb = 0
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            self.changeTips()
+    }
+    
+    @IBAction func TipBTNPressed () {
+        tipNumber = 1
+        changeTips()
+        dim()
+        view.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
+    }
+    
+    @IBOutlet weak var questionBTN: UIButton!
+    
+    @IBOutlet weak var tip1LBL: UILabel!
+    
+    func changeTips () {
+        if (tipNumber == 1) {
+            popTip.show(text: NSLocalizedString("Smash the game with funny sounds!", comment: ""), direction: .down, maxWidth: 200, in: view, from: dabaImgLBL.frame)
+            popTip.actionAnimation = .bounce(5)
+            tipNumber += 1
+            questionBTN.isHidden = true
+            DigBtn.isHidden = true
+            blockBTN.isHidden = true
+            atackBTN.isHidden = true
+            awesomeBTN.isHidden = true
+            dabaImgLBL.isHidden = false
+        } else if (tipNumber == 2) {
+            popTip.show(text: NSLocalizedString("Use the whistle in the app!", comment: ""), direction: .up, maxWidth: 200, in: view, from: whistleImgLBL.frame)
+            whistleImgLBL.isHidden = false
+            whistleB.isHidden = true
+            popTip.actionAnimation = .bounce(5)
+            tipNumber += 1
+            DigBtn.isHidden = false
+            blockBTN.isHidden = false
+            atackBTN.isHidden = false
+            awesomeBTN.isHidden = false
+            dabaImgLBL.isHidden = true
+            whistleB.isEnabled = true
+        } else if (tipNumber == 3) {
+            popTip.show(text: NSLocalizedString("Choose a serving player!", comment: ""), direction: .right, maxWidth: 200, in: view, from: select_service1.frame)
+            whistleB.isHidden = false
+            whistleImgLBL.isHidden = true
+            select_service1.isHidden = false
+            select_service1.backgroundColor = .white
+            select_service1.isEnabled = true
+            select_service1.selectedSegmentIndex = 1
+            blinkingSelector(blinkNum: blink)
+            popTip.actionAnimation = .bounce(5)
+            tipNumber += 1
+           whistleB.isEnabled = false
+        } else if (tipNumber == 4) {
+            popTip.show(text: NSLocalizedString("Fill pauses with cool tracks!", comment: ""), direction: .up, maxWidth: 200, in: view, from: playImgLBL.frame)
+            popTip.actionAnimation = .bounce(5)
+            workitem?.cancel()
+            workitem2?.cancel()
+            self.select_service1.selectedSegmentIndex = UISegmentedControl.noSegment
+            playImgLBL.isHidden = false
+            playImgLBL.image = UIImage (named: "play-button")
+            select_service1.isHidden = true
+            playPauseBTN.isHidden = true
+            blinkingPlay(blinkNum: blink)
+            tipNumber = 5
+        } else if (tipNumber == 5) {
+                popTip.show(text: NSLocalizedString("Use random coin to select service/side!", comment: ""), direction: .right, maxWidth: 200, in: view, from: coinImgLBL.frame)
+                playImgLBL.isHidden = true
+                playPauseBTN.isHidden = false
+                coinImgLBL.isHidden = false
+                randomB.isHidden = true
+                select_service1.isHidden = true
+                randomCoinImage.isHidden = false
+                popTip.actionAnimation = .bounce(5)
+                blinkingCoin(blinkNum: blink)
+                tipNumber = 6
+        } else if (tipNumber == 6) {
+            popTip.show(text: NSLocalizedString("This button for finish set or match!", comment: ""), direction: .up, maxWidth: 200, in: view, from: finalImgLBL.frame)
+            popTip.actionAnimation = .bounce(5)
+            workitem3?.cancel()
+            workitem4?.cancel()
+            coinImgLBL.isHidden = true
+            randomB.isHidden = false
+            randomCoinImage.isHidden = true
+            finalWhistleButton.isHidden = true
+            finalImgLBL.isHidden = false
+            tipNumber = 7
+        } else if (tipNumber == 7) {
+            popTip.show(text: NSLocalizedString("The time-out button vibrates every 30 seconds!", comment: ""), direction: .down, maxWidth: 200, in: view, from: timeoutImgLBL.frame)
+            popTip.actionAnimation = .bounce(5)
+            finalImgLBL.isHidden = true
+            finalWhistleButton.isHidden = false
+            timeoutStop.isHidden = true
+            timeoutStart.isHidden = true
+            timeoutImgLBL.isHidden = false
+            tipNumber = 8
+        } else if (tipNumber == 8) {
+            popTip.show(text: NSLocalizedString("Remember to change sides every 7 points", comment: ""), direction: .left, maxWidth: 200, in: view, from: switchImgLBL.frame)
+            popTip.actionAnimation = .bounce(5)
+            timeoutStop.isHidden = false
+            timeoutStart.isHidden = false
+            timeoutImgLBL.isHidden = true
+            switchButton.isHidden = true
+            switchImgLBL.isHidden = false
+            tipNumber = 9
+        } else if (tipNumber == 9) {
+            popTip.show(text: NSLocalizedString("<<<Swipe to see the log<<<", comment: ""), direction: .left, maxWidth: 200, in: view, from: tip1LBL.frame)
+            popTip.actionAnimation = .bounce(5)
+            switchButton.isHidden = false
+            switchImgLBL.isHidden = true
+            tipNumber = 10
+        } else if (tipNumber == 10) {
+            questionBTN.isHidden = false
+            view.backgroundColor = UIColor.white.withAlphaComponent(1)
+            tipNumber = 0
+            if (fvb == 1) {
+                finalWhistleButton.isEnabled = true
+                fvb = 0
+            }
+            redim()
+        }
+    }
+    
+    // image's outlets fot POPTip
+    @IBOutlet weak var coinImgLBL: UIImageView!
+    @IBOutlet weak var whistleImgLBL: UIImageView!
+    @IBOutlet weak var playImgLBL: UIImageView!
+    @IBOutlet weak var dabaImgLBL: UIImageView!
+    @IBOutlet weak var finalImgLBL: UIImageView!
+    @IBOutlet weak var timeoutImgLBL: UIImageView!
+    @IBOutlet weak var switchImgLBL: UIImageView!
+    
+    
+    var workitem : DispatchWorkItem?
+    var workitem2 : DispatchWorkItem?
+    var blink = 1
+    func blinkingSelector (blinkNum: Int) {
+        workitem = DispatchWorkItem { self.select_service1.selectedSegmentIndex = 0
+            self.blink = 2
+            self.blinkingSelector(blinkNum: self.blink)
+        }
+        workitem2 = DispatchWorkItem { self.select_service1.selectedSegmentIndex = 1
+            self.blink = 1
+            self.blinkingSelector(blinkNum: self.blink)
+        }
+      if (blinkNum == 1) {
+        DispatchQueue.main.asyncAfter (deadline: .now() + 1.0, execute: workitem!)
+            } else {
+        DispatchQueue.main.asyncAfter (deadline: .now() + 1.0, execute: workitem2!)
+        }
+    }
+    var workitem3 : DispatchWorkItem?
+    var workitem4 : DispatchWorkItem?
+    
+    
+    func blinkingCoin (blinkNum: Int) {
+        if (blinkNum == 1) {
+            let image1 : UIImage = UIImage(named: "euro")!
+            workitem3 = DispatchWorkItem { self.randomCoinImage.image = image1
+                self.blink = 2
+                self.blinkingCoin(blinkNum: self.blink)
+            }
+            DispatchQueue.main.asyncAfter (deadline: .now() + 1.0, execute: workitem3!)
+        } else {
+            let image2 : UIImage = UIImage(named: "bitcoin")!
+            workitem4 = DispatchWorkItem { self.randomCoinImage.image = image2
+                self.blink = 1
+                self.blinkingCoin(blinkNum: self.blink)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0,execute: workitem4!)
+        }
+    }
+    
+    func blinkingPlay (blinkNum: Int) {
+        if (blinkNum == 1) {
+            let image1 : UIImage = UIImage(named: "play-button")!
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.playImgLBL.image = image1
+                self.blink = 2
+                self.blinkingPlay(blinkNum: self.blink)
+            }
+        } else {
+            let image2 : UIImage = UIImage(named: "pauseBtn")!
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.playImgLBL.image = image2
+                self.blink = 1
+                self.blinkingPlay(blinkNum: self.blink)
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -728,6 +991,9 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         select_service1.isHidden = true
         select_service2.isHidden = true
         changeSides()
+        popTip.bubbleColor = .white
+        popTip.textColor = UIColor(red:1.00, green:0.40, blue:0.00, alpha:0.8)
+        popTip.shouldDismissOnTap = true
     }
     
 }

@@ -37,7 +37,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
-    func arr () -> String {
+    func arr () -> String {  // for sharing log
         var str: String = ""
         for i in coreArray {
             str += "\(i) \n"
@@ -95,7 +95,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
                 for item in results as! [NSManagedObject] {
                     
                     if let matches = item.value (forKey: "matches") as? String {
-                        coreArray.append(matches)
+                        coreArray.insert(matches, at: 0)
                         print(matches)
                     }
                     
@@ -132,10 +132,12 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     @IBAction func ShareButton(_ sender: Any) {
+        if (coreArray.isEmpty == false) {
         let shareActivity = UIActivityViewController (activityItems: [arr()], applicationActivities: nil)
         shareActivity.popoverPresentationController?.sourceView = self.view
         
         self.present (shareActivity, animated: true, completion: nil)
+        }
     }
     
     @IBOutlet weak var logLBL: UILabel!
@@ -155,10 +157,9 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     @IBAction func ClearLogButton(_ sender: UIButton) {
-    
-        let dialogMessage = UIAlertController(title: "Deleting history", message: "Are you sure you want to delete the history?", preferredStyle: .alert)
+        let dialogMessage = UIAlertController(title: NSLocalizedString("Deleting history", comment: ""), message: NSLocalizedString("Are you sure you want to delete the history?", comment: ""), preferredStyle: .alert)
 
-        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+        let ok = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: { (action) -> Void in
             print("Ok button tapped")
             self.deleteData()
             self.vcClear = "1"
@@ -167,26 +168,18 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         })
             
         
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+        let cancel = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel) { (action) -> Void in
             print("Cancel button tapped")
         }
-        
         dialogMessage.addAction(ok)
         dialogMessage.addAction(cancel)
         
-        self.present(dialogMessage, animated: true, completion: nil)
         
-    }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let destDataArr : ViewController =  segue.destination as! ViewController
-//        destDataArr.coreArr = coreArray
-//            if (vcClear == "1") {
-//                let destData : ViewController =  segue.destination as! ViewController
-//                destData.clear2 = vcClear
-//        }
-//    }
- 
+        
+        self.present(dialogMessage, animated: true, completion: nil)
+        }
+
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		023DB039228459A8007D35D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023DB037228459A8007D35D1 /* Main.storyboard */; };
+		3291552BC258ADE4A3AA2202 /* Pods_SportSoundAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F51255269BB2AAF71AD685 /* Pods_SportSoundAppTests.framework */; };
+		3818EC0D801A1219CEA3CA02 /* Pods_SportSoundApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D98B1BC092C1347874D51 /* Pods_SportSoundApp.framework */; };
 		B116A2DF22E24C32004ECE1D /* cheer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B116A2DE22E24C31004ECE1D /* cheer.mp3 */; };
 		B11F628F21FE633300363DFE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11F628E21FE633200363DFE /* SecondViewController.swift */; };
 		B13AEC9D22CF7D9200030376 /* ssapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B13AEC9B22CF7D9200030376 /* ssapp.xcdatamodeld */; };
@@ -16,7 +18,6 @@
 		B16805332221388E00074350 /* whistle_orig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16805322221388E00074350 /* whistle_orig.mp3 */; };
 		B168053522213C2500074350 /* whistle_serv.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B168053422213C2500074350 /* whistle_serv.mp3 */; };
 		B168053722213CFB00074350 /* serv_whistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B168053622213CF900074350 /* serv_whistle.mp3 */; };
-		B169701D2328F2FA00B3B961 /* soundOfTimeout3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B169701A2328F2F900B3B961 /* soundOfTimeout3.mp3 */; };
 		B169701E2328F2FA00B3B961 /* soundOfTimeout1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B169701B2328F2FA00B3B961 /* soundOfTimeout1.mp3 */; };
 		B169701F2328F2FA00B3B961 /* soundOfTimeout2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B169701C2328F2FA00B3B961 /* soundOfTimeout2.mp3 */; };
 		B16CDA6421E55B7200CD222C /* oou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6321E55B7200CD222C /* oou.mp3 */; };
@@ -24,6 +25,9 @@
 		B16CDA6821E55C1800CD222C /* monsterBlock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */; };
 		B16CDA6A21E55C3300CD222C /* buzzle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6921E55C3300CD222C /* buzzle.mp3 */; };
 		B16CDA6C21E55C6800CD222C /* whistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6B21E55C6800CD222C /* whistle.mp3 */; };
+		B17BB40B2388029D00FB11B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B17BB4092388029D00FB11B2 /* Localizable.strings */; };
+		B17BB40E23885B1400FB11B2 /* soundOfTimeout3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17BB40D23885B1400FB11B2 /* soundOfTimeout3.mp3 */; };
+		B196753C2386E40900A5D3D6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B196753E2386E40900A5D3D6 /* Launch Screen.storyboard */; };
 		B1C114FC23355E9600BB8ED5 /* WhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FB23355E9600BB8ED5 /* WhistleViewController.swift */; };
 		B1C114FE23355ED200BB8ED5 /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FD23355ED200BB8ED5 /* IconsViewController.swift */; };
 		B1C1150023355EF000BB8ED5 /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FF23355EF000BB8ED5 /* ReadyViewController.swift */; };
@@ -34,6 +38,7 @@
 		B1E06D3D21E3E8BE008C361A /* SportSoundAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D3C21E3E8BE008C361A /* SportSoundAppTests.swift */; };
 		B1E06D4821E3E8BE008C361A /* SportSoundAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D4721E3E8BE008C361A /* SportSoundAppUITests.swift */; };
 		B1E33E8F21E40CCF0006ED59 /* magic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E33E8E21E40CCF0006ED59 /* magic.mp3 */; };
+		F9F3F43DF5586E5DDB26975E /* Pods_SportSoundApp_SportSoundAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE24A2C4E6C0ED621186A1F0 /* Pods_SportSoundApp_SportSoundAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,13 @@
 
 /* Begin PBXFileReference section */
 		023DB038228459A8007D35D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		318516973E69870352B1A255 /* Pods-SportSoundAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SportSoundAppTests/Pods-SportSoundAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47CFF83B9B3E81D5CE5ADCDF /* Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SportSoundApp-SportSoundAppUITests/Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C43BE99EDD06CF53F7B43FC /* Pods-SportSoundApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundApp.debug.xcconfig"; path = "Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5E317B48A8734AE13D83FA72 /* Pods-SportSoundApp-SportSoundAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundApp-SportSoundAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SportSoundApp-SportSoundAppUITests/Pods-SportSoundApp-SportSoundAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		621D98B1BC092C1347874D51 /* Pods_SportSoundApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportSoundApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71F51255269BB2AAF71AD685 /* Pods_SportSoundAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportSoundAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F7834B90C8F123466785CF3 /* Pods-SportSoundAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundAppTests.release.xcconfig"; path = "Target Support Files/Pods-SportSoundAppTests/Pods-SportSoundAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B1060C9122D8D059000F5646 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		B116A2DE22E24C31004ECE1D /* cheer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cheer.mp3; sourceTree = "<group>"; };
 		B11F628E21FE633200363DFE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +79,6 @@
 		B16805322221388E00074350 /* whistle_orig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_orig.mp3; sourceTree = "<group>"; };
 		B168053422213C2500074350 /* whistle_serv.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_serv.mp3; sourceTree = "<group>"; };
 		B168053622213CF900074350 /* serv_whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = serv_whistle.mp3; sourceTree = "<group>"; };
-		B169701A2328F2F900B3B961 /* soundOfTimeout3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout3.mp3; sourceTree = "<group>"; };
 		B169701B2328F2FA00B3B961 /* soundOfTimeout1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout1.mp3; sourceTree = "<group>"; };
 		B169701C2328F2FA00B3B961 /* soundOfTimeout2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout2.mp3; sourceTree = "<group>"; };
 		B16CDA6321E55B7200CD222C /* oou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oou.mp3; sourceTree = "<group>"; };
@@ -75,6 +86,15 @@
 		B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monsterBlock.mp3; sourceTree = "<group>"; };
 		B16CDA6921E55C3300CD222C /* buzzle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buzzle.mp3; sourceTree = "<group>"; };
 		B16CDA6B21E55C6800CD222C /* whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle.mp3; sourceTree = "<group>"; };
+		B16EF4972387381C0034B71B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
+		B16EF4992387381F0034B71B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "ru.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
+		B17BB4062387F8E700FB11B2 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
+		B17BB4072387F8E700FB11B2 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = "uk.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
+		B17BB4082387F8E700FB11B2 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Onboarding.strings; sourceTree = "<group>"; };
+		B17BB40A2388029D00FB11B2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B17BB40C23884B2700FB11B2 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B17BB40D23885B1400FB11B2 /* soundOfTimeout3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout3.mp3; sourceTree = "<group>"; };
+		B196753D2386E40900A5D3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B1C114FB23355E9600BB8ED5 /* WhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistleViewController.swift; sourceTree = "<group>"; };
 		B1C114FD23355ED200BB8ED5 /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
 		B1C114FF23355EF000BB8ED5 /* ReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +111,8 @@
 		B1E06D4721E3E8BE008C361A /* SportSoundAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportSoundAppUITests.swift; sourceTree = "<group>"; };
 		B1E06D4921E3E8BE008C361A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1E33E8E21E40CCF0006ED59 /* magic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = magic.mp3; sourceTree = "<group>"; };
+		C995F6E119115DF0EBB17DB3 /* Pods-SportSoundApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundApp.release.xcconfig"; path = "Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp.release.xcconfig"; sourceTree = "<group>"; };
+		EE24A2C4E6C0ED621186A1F0 /* Pods_SportSoundApp_SportSoundAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportSoundApp_SportSoundAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3818EC0D801A1219CEA3CA02 /* Pods_SportSoundApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3291552BC258ADE4A3AA2202 /* Pods_SportSoundAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,24 +136,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F3F43DF5586E5DDB26975E /* Pods_SportSoundApp_SportSoundAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A527E2A751E9847FB43226E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				621D98B1BC092C1347874D51 /* Pods_SportSoundApp.framework */,
+				EE24A2C4E6C0ED621186A1F0 /* Pods_SportSoundApp_SportSoundAppUITests.framework */,
+				71F51255269BB2AAF71AD685 /* Pods_SportSoundAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		734F7ACDA9AC7D77078B1329 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C43BE99EDD06CF53F7B43FC /* Pods-SportSoundApp.debug.xcconfig */,
+				C995F6E119115DF0EBB17DB3 /* Pods-SportSoundApp.release.xcconfig */,
+				5E317B48A8734AE13D83FA72 /* Pods-SportSoundApp-SportSoundAppUITests.debug.xcconfig */,
+				47CFF83B9B3E81D5CE5ADCDF /* Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig */,
+				318516973E69870352B1A255 /* Pods-SportSoundAppTests.debug.xcconfig */,
+				9F7834B90C8F123466785CF3 /* Pods-SportSoundAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B16970192328E64D00B3B961 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
 				B1475117233C1A08005C4339 /* whistle_long.mp3 */,
 				B168053422213C2500074350 /* whistle_serv.mp3 */,
-				B1C18BE723265A890019BF15 /* soundOfTimeout.mp3 */,
 				B16805322221388E00074350 /* whistle_orig.mp3 */,
 				B1E33E8E21E40CCF0006ED59 /* magic.mp3 */,
 				B116A2DE22E24C31004ECE1D /* cheer.mp3 */,
+				B1C18BE723265A890019BF15 /* soundOfTimeout.mp3 */,
 				B169701B2328F2FA00B3B961 /* soundOfTimeout1.mp3 */,
 				B169701C2328F2FA00B3B961 /* soundOfTimeout2.mp3 */,
-				B169701A2328F2F900B3B961 /* soundOfTimeout3.mp3 */,
+				B17BB40D23885B1400FB11B2 /* soundOfTimeout3.mp3 */,
 				B16CDA6321E55B7200CD222C /* oou.mp3 */,
 				B168053622213CF900074350 /* serv_whistle.mp3 */,
 				B16CDA6521E55B8200CD222C /* unluck.mp3 */,
@@ -148,6 +196,8 @@
 				B1E06D3B21E3E8BE008C361A /* SportSoundAppTests */,
 				B1E06D4621E3E8BE008C361A /* SportSoundAppUITests */,
 				B1E06D2521E3E8B2008C361A /* Products */,
+				734F7ACDA9AC7D77078B1329 /* Pods */,
+				2A527E2A751E9847FB43226E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,12 +218,14 @@
 				B11F628E21FE633200363DFE /* SecondViewController.swift */,
 				B1E06D2721E3E8B2008C361A /* AppDelegate.swift */,
 				023DB037228459A8007D35D1 /* Main.storyboard */,
+				B196753E2386E40900A5D3D6 /* Launch Screen.storyboard */,
 				B15F923C2382A2760006B9A9 /* Onboarding.storyboard */,
 				B1C114FB23355E9600BB8ED5 /* WhistleViewController.swift */,
 				B1C114FD23355ED200BB8ED5 /* IconsViewController.swift */,
 				B1C114FF23355EF000BB8ED5 /* ReadyViewController.swift */,
 				B1E06D2E21E3E8BD008C361A /* Assets.xcassets */,
 				B1E06D3321E3E8BD008C361A /* Info.plist */,
+				B17BB4092388029D00FB11B2 /* Localizable.strings */,
 				B16970192328E64D00B3B961 /* Sounds */,
 			);
 			path = SportSoundApp;
@@ -204,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1E06D4C21E3E8BE008C361A /* Build configuration list for PBXNativeTarget "SportSoundApp" */;
 			buildPhases = (
+				4883AC6206F1D894577A51D3 /* [CP] Check Pods Manifest.lock */,
 				B1E06D2021E3E8B2008C361A /* Sources */,
 				B1E06D2121E3E8B2008C361A /* Frameworks */,
 				B1E06D2221E3E8B2008C361A /* Resources */,
+				10A48870C829777ED06B482E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1E06D4F21E3E8BE008C361A /* Build configuration list for PBXNativeTarget "SportSoundAppTests" */;
 			buildPhases = (
+				26E8C7E2050B0738D0A1002B /* [CP] Check Pods Manifest.lock */,
 				B1E06D3421E3E8BE008C361A /* Sources */,
 				B1E06D3521E3E8BE008C361A /* Frameworks */,
 				B1E06D3621E3E8BE008C361A /* Resources */,
@@ -239,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1E06D5221E3E8BE008C361A /* Build configuration list for PBXNativeTarget "SportSoundAppUITests" */;
 			buildPhases = (
+				E3627A8E6D9A6ABE62BC578C /* [CP] Check Pods Manifest.lock */,
 				B1E06D3F21E3E8BE008C361A /* Sources */,
 				B1E06D4021E3E8BE008C361A /* Frameworks */,
 				B1E06D4121E3E8BE008C361A /* Resources */,
+				242063CAE0FD1223527642F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +346,7 @@
 				en,
 				Base,
 				ru,
+				uk,
 			);
 			mainGroup = B1E06D1B21E3E8B1008C361A;
 			productRefGroup = B1E06D2521E3E8B2008C361A /* Products */;
@@ -312,13 +370,15 @@
 				B168053722213CFB00074350 /* serv_whistle.mp3 in Resources */,
 				023DB039228459A8007D35D1 /* Main.storyboard in Resources */,
 				B16805332221388E00074350 /* whistle_orig.mp3 in Resources */,
+				B17BB40B2388029D00FB11B2 /* Localizable.strings in Resources */,
 				B16CDA6821E55C1800CD222C /* monsterBlock.mp3 in Resources */,
 				B16CDA6421E55B7200CD222C /* oou.mp3 in Resources */,
 				B169701E2328F2FA00B3B961 /* soundOfTimeout1.mp3 in Resources */,
+				B17BB40E23885B1400FB11B2 /* soundOfTimeout3.mp3 in Resources */,
+				B196753C2386E40900A5D3D6 /* Launch Screen.storyboard in Resources */,
 				B16CDA6A21E55C3300CD222C /* buzzle.mp3 in Resources */,
 				B1475118233C1A09005C4339 /* whistle_long.mp3 in Resources */,
 				B16CDA6C21E55C6800CD222C /* whistle.mp3 in Resources */,
-				B169701D2328F2FA00B3B961 /* soundOfTimeout3.mp3 in Resources */,
 				B116A2DF22E24C32004ECE1D /* cheer.mp3 in Resources */,
 				B1E33E8F21E40CCF0006ED59 /* magic.mp3 in Resources */,
 				B169701F2328F2FA00B3B961 /* soundOfTimeout2.mp3 in Resources */,
@@ -343,6 +403,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10A48870C829777ED06B482E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		242063CAE0FD1223527642F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SportSoundApp-SportSoundAppUITests/Pods-SportSoundApp-SportSoundAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SportSoundApp-SportSoundAppUITests/Pods-SportSoundApp-SportSoundAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SportSoundApp-SportSoundAppUITests/Pods-SportSoundApp-SportSoundAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26E8C7E2050B0738D0A1002B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SportSoundAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4883AC6206F1D894577A51D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SportSoundApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3627A8E6D9A6ABE62BC578C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SportSoundApp-SportSoundAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1E06D2021E3E8B2008C361A /* Sources */ = {
@@ -397,6 +560,7 @@
 				023DB038228459A8007D35D1 /* Base */,
 				B1560B1022B94309007E2EDE /* ru */,
 				B1060C9122D8D059000F5646 /* en */,
+				B17BB4062387F8E700FB11B2 /* uk */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -407,9 +571,30 @@
 				B15F923B2382A2760006B9A9 /* Base */,
 				B15F923E2382A3050006B9A9 /* en */,
 				B15F92402382A3080006B9A9 /* ru */,
+				B17BB4082387F8E700FB11B2 /* uk */,
 			);
 			name = Onboarding.storyboard;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		B17BB4092388029D00FB11B2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B17BB40A2388029D00FB11B2 /* ru */,
+				B17BB40C23884B2700FB11B2 /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B196753E2386E40900A5D3D6 /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B196753D2386E40900A5D3D6 /* Base */,
+				B16EF4972387381C0034B71B /* en */,
+				B16EF4992387381F0034B71B /* ru */,
+				B17BB4072387F8E700FB11B2 /* uk */,
+			);
+			name = "Launch Screen.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -535,6 +720,7 @@
 		};
 		B1E06D4D21E3E8BE008C361A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C43BE99EDD06CF53F7B43FC /* Pods-SportSoundApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +740,7 @@
 		};
 		B1E06D4E21E3E8BE008C361A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C995F6E119115DF0EBB17DB3 /* Pods-SportSoundApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -573,6 +760,7 @@
 		};
 		B1E06D5021E3E8BE008C361A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 318516973E69870352B1A255 /* Pods-SportSoundAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -594,6 +782,7 @@
 		};
 		B1E06D5121E3E8BE008C361A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F7834B90C8F123466785CF3 /* Pods-SportSoundAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -615,6 +804,7 @@
 		};
 		B1E06D5321E3E8BE008C361A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E317B48A8734AE13D83FA72 /* Pods-SportSoundApp-SportSoundAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -635,6 +825,7 @@
 		};
 		B1E06D5421E3E8BE008C361A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47CFF83B9B3E81D5CE5ADCDF /* Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

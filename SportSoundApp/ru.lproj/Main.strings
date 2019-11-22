@@ -5,17 +5,8 @@
 /* Class = "UILabel"; text = "Clear"; ObjectID = "5Xb-Sc-nTP"; */
 "5Xb-Sc-nTP.text" = "Очитстить";
 
-/* Class = "UILabel"; text = "Magic"; ObjectID = "9Vu-tE-TOd"; */
-"9Vu-tE-TOd.text" = "Магия";
-
-/* Class = "UILabel"; text = "Stop timeout"; ObjectID = "ByV-oZ-xxr"; */
-"ByV-oZ-xxr.text" = "Таймаут окончен";
-
 /* Class = "UILabel"; text = "Log"; ObjectID = "JHt-0D-yLi"; */
 "JHt-0D-yLi.text" = "История";
-
-/* Class = "UILabel"; text = "reset score"; ObjectID = "MCr-dc-326"; */
-"MCr-dc-326.text" = "Сброс очков";
 
 /* Class = "UILabel"; text = "SET"; ObjectID = "NJa-M4-Ngo"; */
 "NJa-M4-Ngo.text" = "Партия";
@@ -23,50 +14,14 @@
 /* Class = "UITextField"; placeholder = "Team name"; ObjectID = "O6k-bh-PQ2"; */
 "O6k-bh-PQ2.placeholder" = "Команда";
 
-/* Class = "UILabel"; text = "timeout"; ObjectID = "UAX-lP-CvR"; */
-"UAX-lP-CvR.text" = "Таймаут";
-
 /* Class = "UILabel"; text = "0"; ObjectID = "UvE-S8-DOq"; */
 "UvE-S8-DOq.text" = "0";
-
-/* Class = "UINavigationItem"; title = "Log"; ObjectID = "WlA-mO-t7N"; */
-"WlA-mO-t7N.title" = "История";
 
 /* Class = "UINavigationItem"; title = "VolleyApp"; ObjectID = "bBb-QW-wyF"; */
 "bBb-QW-wyF.title" = "VolleyApp";
 
-/* Class = "UIButton"; normalTitle = "BadluckButton"; ObjectID = "cLg-oH-w5V"; */
-"cLg-oH-w5V.normalTitle" = "Не повезло";
-
 /* Class = "UITextField"; placeholder = "Team name"; ObjectID = "cjn-K0-7mE"; */
 "cjn-K0-7mE.placeholder" = "Команда";
-
-/* Class = "UILabel"; text = "Bad luck"; ObjectID = "dQs-04-kT5"; */
-"dQs-04-kT5.text" = "Не повезло";
-
-/* Class = "UIButton"; normalTitle = "BlockButton"; ObjectID = "gHW-BB-5Ak"; */
-"gHW-BB-5Ak.normalTitle" = "Блок";
-
-/* Class = "UILabel"; text = "finish the match"; ObjectID = "gXl-KQ-bp5"; */
-"gXl-KQ-bp5.text" = "Матч окончен";
-
-/* Class = "UILabel"; text = "LOG"; ObjectID = "gbN-Yf-NE4"; */
-"gbN-Yf-NE4.text" = "История";
-
-/* Class = "UILabel"; text = "end of set"; ObjectID = "hW5-iE-rBP"; */
-"hW5-iE-rBP.text" = "Конец партии";
-
-/* Class = "UILabel"; text = "Applause"; ObjectID = "jwk-9X-fAG"; */
-"jwk-9X-fAG.text" = "Аплодисменты";
-
-/* Class = "UILabel"; text = "Whistle"; ObjectID = "otB-dI-qKr"; */
-"otB-dI-qKr.text" = "Свисток";
-
-/* Class = "UIButton"; normalTitle = "OhhButton"; ObjectID = "piH-H1-NeN"; */
-"piH-H1-NeN.normalTitle" = "О-оу";
-
-/* Class = "UILabel"; text = "Ohhh"; ObjectID = "swY-a5-oTZ"; */
-"swY-a5-oTZ.text" = "О-оу";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "t8W-4O-Orb"; */
 "t8W-4O-Orb.text" = "0";
@@ -77,17 +32,3 @@
 /* Class = "UIButton"; normalTitle = "switchButton"; ObjectID = "v0m-Cl-BJB"; */
 "v0m-Cl-BJB.normalTitle" = "switchButton";
 
-/* Class = "UILabel"; text = "whistle"; ObjectID = "vdF-be-Pex"; */
-"vdF-be-Pex.text" = "Свисток";
-
-/* Class = "UIButton"; normalTitle = "WhistleButton"; ObjectID = "vgB-ig-dp4"; */
-"vgB-ig-dp4.normalTitle" = "Свисток";
-
-/* Class = "UILabel"; text = "Buzzle"; ObjectID = "x2F-Bc-u6v"; */
-"x2F-Bc-u6v.text" = "Buzzle";
-
-/* Class = "UIButton"; normalTitle = "BuzzleButton"; ObjectID = "xbx-8g-z56"; */
-"xbx-8g-z56.normalTitle" = "Сирена";
-
-/* Class = "UILabel"; text = "Block"; ObjectID = "xyi-cA-17i"; */
-"xyi-cA-17i.text" = "Блок";
