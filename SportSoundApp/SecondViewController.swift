@@ -195,12 +195,24 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             arrData.removeAll()
         }
     }
-
+    
+    func swipe() {
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture(gesture:)))
+        swipeLeft.direction = .right
+        self.view.addGestureRecognizer(swipeLeft)
+    }
+    
+    @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
+        if gesture.direction == .right {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         savingData()
         getData()
+        swipe()
     }
     
 }

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k46-ps-IaQ">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k46-ps-IaQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +11,7 @@
         <!--Whistle View Controller-->
         <scene sceneID="twX-6B-x8A">
             <objects>
-                <viewController storyboardIdentifier="notificationStoryboard" wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" id="k46-ps-IaQ" customClass="WhistleViewController" customModule="SportSoundApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="notificationStoryboard" wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="k46-ps-IaQ" customClass="WhistleViewController" customModule="SportSoundApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FOS-E5-NeY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +27,7 @@
                                     <color key="titleColor" red="0.94901960780000005" green="0.39607843139999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="toIconsButton:" destination="k46-ps-IaQ" eventType="touchUpInside" id="bNl-c6-5QF"/>
+                                    <segue destination="sp7-oz-WVD" kind="show" id="71Z-cl-ChZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No need to carry whistle!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhr-pR-uRp">
@@ -64,7 +62,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whistle (1)" translatesAutoresizingMaskIntoConstraints="NO" id="nvi-bw-NJK">
-                                <rect key="frame" x="127" y="405" width="161" height="86"/>
+                                <rect key="frame" x="126.5" y="405" width="161" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="161" id="lD8-tS-pPw"/>
                                     <constraint firstAttribute="height" constant="86" id="meX-2d-dI7"/>
@@ -88,9 +86,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X26-XW-or3"/>
                     </view>
-                    <connections>
-                        <segue destination="sp7-oz-WVD" kind="show" identifier="firstToSecond" id="xda-Jy-j2Z"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwR-zP-2K8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,7 +94,7 @@
         <!--Icons View Controller-->
         <scene sceneID="MkB-LI-Tfy">
             <objects>
-                <viewController wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" id="sp7-oz-WVD" customClass="IconsViewController" customModule="SportSoundApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IconsViewController" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="sp7-oz-WVD" customClass="IconsViewController" customModule="SportSoundApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qGk-1J-K2T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,8 +127,7 @@
                                     <color key="titleColor" red="0.94901960780000005" green="0.39607843139999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="toIconsButton:" destination="k46-ps-IaQ" eventType="touchUpInside" id="y2A-Tr-Jyj"/>
-                                    <action selector="toReadyButton:" destination="sp7-oz-WVD" eventType="touchUpInside" id="27p-v4-YIt"/>
+                                    <segue destination="U9b-eE-CHW" kind="show" id="FBB-7s-SuZ"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse (2)" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-Qc-k4g">
@@ -175,9 +169,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lK2-lq-wAe"/>
                     </view>
-                    <connections>
-                        <segue destination="U9b-eE-CHW" kind="show" identifier="secondToReady" id="gLg-mF-IV2"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="ZQ7-TE-m27"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XiS-qD-RWB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,7 +178,7 @@
         <!--Ready View Controller-->
         <scene sceneID="S7y-uo-7wO">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="U9b-eE-CHW" customClass="ReadyViewController" customModule="SportSoundApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReadyViewController" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="U9b-eE-CHW" customClass="ReadyViewController" customModule="SportSoundApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="poF-Tw-w2M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,6 +279,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c6r-tw-HCJ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8dx-Pt-k7H"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEu-ZE-alZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
