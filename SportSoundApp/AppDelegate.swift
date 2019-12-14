@@ -25,10 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let launchStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
             
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            
+    
             var vc: UIViewController
             
             if launchedBefore {
+                
+                //RunLoop.current.run(until: NSDate(timeIntervalSinceNow: 1.5) as Date)
+
                 vc = mainStoryboard.instantiateInitialViewController()!
                 
             } else {

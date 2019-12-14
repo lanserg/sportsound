@@ -147,6 +147,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     var matchScore : String = ""
     var matchTeams : String = ""
 
+  // ф-я добавления данных о матче в массив для передачи в SecondVC с помошью prepareForSegue
     
     func addingToMain() {
         let match = Match (score: "  \(toSecondViewSets)", setscore: "  \(toSecondViewScore)", teamnames: " \(toSecondViewTeams)")
@@ -154,6 +155,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         arrayOfData.append(match.score)
         arrayOfData.append(match.teamnames)
     }
+  
+    // ф-я напоминание-вибрация для смены сторон при достижении числа кратного 7
     
     func changeSides () {
         let scoreAmount = score1 + score2
@@ -164,12 +167,16 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             }
         }
     }
+   
+    // функция вибрации
     
     func vibration () {
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
     }
 
     var elapse: Double = 0
+    
+   // запуск таймера
     
     @IBAction func timerStart(_ sender: Any) {
         timerLBL.isHidden = false
@@ -198,6 +205,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     }
     
     
+// кнопка остановка таймера
     
     @IBAction func timerStop(_ sender: Any) {
         timer.invalidate()
@@ -207,18 +215,46 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         timerLBL.isHidden = true
     }
    
+    // завершение партии/матча
+    
     @IBAction func finalWhistleAction(_ sender: Any) {
         if (score1 != score2) {
         let dialogMessage = UIAlertController(title: NSLocalizedString("End of:", comment: ""), message: "", preferredStyle: .alert)
-        
+   
+            // ALERT при нажатии кнопки финального свистка для завершения матча или партии
+            
         let set = UIAlertAction(title: NSLocalizedString("Set", comment: ""), style: .default, handler: { (action) -> Void in
             print("Set button tapped")
             if (self.score1 > 0 && (self.score1 > self.score2)) {
                 self.team1log+=1
                 self.stringequal()
+                switch self.setLBL.text {
+                case "1":
+                    self.setLBL.text = "2"
+                case "2":
+                    self.setLBL.text = "3"
+                case "3":
+                    self.setLBL.text = "4"
+                case "4":
+                    self.setLBL.text = "5"
+                default:
+                    break
+                }
             } else if (self.score2 > 0 && (self.score2 > self.score1)) {
                 self.team2log+=1
                 self.stringequal()
+                switch self.setLBL.text {
+                case "1":
+                    self.setLBL.text = "2"
+                case "2":
+                    self.setLBL.text = "3"
+                case "3":
+                    self.setLBL.text = "4"
+                case "4":
+                    self.setLBL.text = "5"
+                default:
+                    break
+                }
             }
             self.reset()
         })
@@ -286,6 +322,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         servNumLBL2.text = ""
         select_service1.isHidden = true
         select_service2.isHidden = true
+        setLBL.text = "1"
     }
 
     var t1 = ""
