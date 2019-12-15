@@ -17,9 +17,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     var tipNumber = 0
     
-    @IBOutlet weak var SetNameLBL: UILabel!
-    
-    var audioPlayer: AVAudioPlayer? //= AVAudioPlayer()
+    var audioPlayer: AVAudioPlayer?
     
     var name: String?
     
@@ -55,15 +53,13 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     var timer = Timer()
     
-    var lang1 = ""
+    @IBOutlet weak var SetNameLBL: UILabel!
+    
+    //var lang1 = ""
 
     @IBOutlet weak var finalWhistleButton: UIButton!
     
     @IBOutlet weak var randomB: UIButton!
-    
-    
-    @IBAction func swipeDown(_ sender: Any) {
-    }
     
     @IBOutlet weak var serviceBall2Img: UIImageView!
     
@@ -109,6 +105,12 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     @IBOutlet weak var playPauseBTN: UIButton!
     
+    @IBAction func swipeDown(_ sender: Any) {
+        
+       }
+    
+    // класс для каждого матча
+    
     class Match {
         var score: String = ""
         var setscore: String = ""
@@ -120,7 +122,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         }
     }
     
-    var arrayOfData: [Any] = []
+    //запись результатов сетов и матчей
     
     func stringequal () {
        
@@ -143,11 +145,14 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             }
     }
     }
+    
     var matchResault : String = ""
     var matchScore : String = ""
     var matchTeams : String = ""
 
   // ф-я добавления данных о матче в массив для передачи в SecondVC с помошью prepareForSegue
+   
+    var arrayOfData: [Any] = []
     
     func addingToMain() {
         let match = Match (score: "  \(toSecondViewSets)", setscore: "  \(toSecondViewScore)", teamnames: " \(toSecondViewTeams)")
@@ -205,7 +210,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     }
     
     
-// кнопка остановка таймера
+// остановка таймера
     
     @IBAction func timerStop(_ sender: Any) {
         timer.invalidate()
@@ -291,9 +296,13 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         finalWhistleButton.isEnabled = true
     }
     
+    // удаление данных о матче (после отправки в SecondVC)
+    
     func arrRemove()  {
         arrayOfData.removeAll()
     }
+   
+    // передача массива данных о матче в SecondViewController
     
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (arrayOfData.count > 0) {
@@ -302,7 +311,9 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             arrRemove()
         }
      }
-     
+    
+    // сброс всех введенных данных и обнуление информации о текущем матче после выбора "Окончить матч"
+    
     func resetAllData() {
         score1 = 0
         score2 = 0
@@ -330,6 +341,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     var s1 = 0
     var s2 = 0
     
+    // возвращаем данные с введенные в текстовые поля (названия команд)
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         team1 = inputTeam1.text!
@@ -338,6 +351,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         t2 = inputTeam2.text!
         return true
     }
+  
+    // текущая партия, установка вручную
     
     @IBAction func setPlusButton(_ sender: Any) {
         if (set < 5) {
@@ -358,11 +373,11 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     @IBAction func resetButtonPress(_ sender: Any) {
         reset ()
     }
+
+   // добавление очков команда 1 и свайп вниз минус очко
     
     var sc1 = 0
     var sc2 = 0
-    
-   
     
     @IBAction func score1plus(_ sender: Any) {
         servNumLBL1.isHidden = false
@@ -443,6 +458,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         }
     }
 
+ // добавление очков второй команде и свайп вниз для минус один
     
     @IBAction func score2plus(_ sender: Any) {
         servNumLBL2.isHidden = false
@@ -523,6 +539,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         }
     }
     
+    // смена сторон
+    
     @IBAction func doSwitch(_ sender: Any) {
      sButton()
     }
@@ -539,11 +557,13 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         whistleB.isEnabled = true
     }
     
+    // аудиоплеер (создается сессия)
+    
     @IBAction func playPauseButton(_ sender: UIButton) {
         if (sender.currentImage?.isEqual(UIImage(named: "play-button")))! {
         playPauseBTN.setImage(UIImage.init(named: "pauseBtn"), for: .normal)
             if num == 1 {
-                name = "soundOfTimeout"
+                name = "soundOfTimeout3"
                 playSound()
                 num += 1
                 
@@ -558,7 +578,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                 num += 1
                 
             } else if num == 4 {
-                name = "soundOfTimeout3"
+                name = "soundOfTimeout"
                 playSound()
                 num = 1
                 
@@ -583,6 +603,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     }
 
+ // частичный сброс данных без сброса названия команд
     
     func reset () {
         score1 = 0
@@ -602,6 +623,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     var saveServ = 0
     var servNumStr = ""
     
+ // ф-я смены сторон каждые 7 очков
     
     func sButton() {
         saveServ = 1
@@ -640,6 +662,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         }
     }
 
+    // ф-я аудиоплеера с создание сессии
+    
     func playSound() {
         do {
             self.audioPlayer =  try AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: Bundle.main.path(forResource: name, ofType: "mp3")!) as URL)
@@ -657,6 +681,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             print("Error")
         }
     }
+   
+    // блок кнопок со звуковыми эффектами
     
     @IBAction func whistleBut(_ sender: UIButton) {
         self.audioPlayer!.stop()
@@ -689,6 +715,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         name="unluck"
         playSound()
     }
+   
+    // убираем navigationBar
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidLoad()
@@ -698,6 +726,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
     }
+    
+    // подброс монетки для выбора
     
     @IBAction func randomButtom(_ sender: Any) {
         let randomInt = Int.random(in: 1...2)
@@ -717,12 +747,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     var clear = "2"
     var clear2 : String = "0"
     
-    @IBOutlet weak var select_service1: UISegmentedControl!
-    
-    @IBOutlet weak var select_service2: UISegmentedControl!
-    
-    var playerToService1 = 0
-    var playerToService2 = 0
+    //  ф-я UISegmentedControl для выбора подающего игрока
     
     func selectedPlayer (segment: UISegmentedControl, image2: UIImageView, image: UIImageView) -> Int {
         let select = segment.selectedSegmentIndex
@@ -740,6 +765,18 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         image.isHidden = false
         return (num)
     }
+ 
+    // сегменты
+    
+    @IBOutlet weak var select_service1: UISegmentedControl!
+    @IBOutlet weak var select_service2: UISegmentedControl!
+    
+    @IBOutlet weak var servNumLBL1: UILabel!
+    @IBOutlet weak var servNumLBL2: UILabel!
+    @IBOutlet weak var screenLBL: UILabel!
+    
+    var playerToService1 = 0
+    var playerToService2 = 0
     
     @IBAction func selectServiceAction1(_ sender: Any) {
         playerToService1 = selectedPlayer(segment: select_service1, image2: serviceBall2Img, image: serviceBallImg)
@@ -752,17 +789,9 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         servNumLBL2.text = String (playerToService2)
         select_service2.selectedSegmentIndex = UISegmentedControl.noSegment
     }
+
+    // возврат светлого и активного экрана после обучалки
     
-    @IBOutlet weak var servNumLBL1: UILabel!
-    
-    @IBOutlet weak var servNumLBL2: UILabel!
-    
-    @IBOutlet weak var screenLBL: UILabel!
-    
-  /*  var bounds: CGRect = UIScreen.main.bounds
-    lazy var w:Int  = Int(self.bounds.size.width)
-    lazy var h:Int  = Int(self.bounds.size.height)
-   */
     func redim () {
         inputTeam1.backgroundColor = .white
         inputTeam2.backgroundColor = .white
@@ -772,7 +801,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         timeoutStart.backgroundColor = .white
         resetButton.backgroundColor = .white
         timeoutStop.backgroundColor = .white
-        
         DigBtn.isEnabled = true
         blockBTN.isEnabled = true
         atackBTN.isEnabled = true
@@ -781,8 +809,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         setButton.isEnabled = true
         score1Button.isEnabled = true
         score2Button.isEnabled = true
-        //score1LBL.isEnabled = true
-        //score2LBL.isEnabled = true
         resetButton.isEnabled = true
         randomB.isEnabled = true
         timeoutStop.isEnabled = true
@@ -790,6 +816,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         switchButton.isEnabled = true
         playPauseBTN.isEnabled = true
     }
+    
+    // затемнение экрана для прохождения обучающих подсказок
     
     func dim () {
         view.backgroundColor = UIColor(red:0.89, green:0.89, blue:0.89, alpha:1.0)
@@ -802,7 +830,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         timeoutStart.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
         resetButton.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
         timeoutStop.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
-        
         DigBtn.isEnabled = false
         blockBTN.isEnabled = false
         atackBTN.isEnabled = false
@@ -825,10 +852,16 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             finalWhistleButton.isEnabled = false
         }
     }
+    
     var fvb = 0
+    
+    // смена подсказки при касании экрана
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.changeTips()
     }
+  
+    // вызов подсказок
     
     @IBAction func TipBTNPressed () {
         tipNumber = 1
@@ -840,6 +873,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     @IBOutlet weak var questionBTN: UIButton!
     
     @IBOutlet weak var tip1LBL: UILabel!
+    
+    // ф-я смены посказок во время обучения
     
     func changeTips () {
         if (tipNumber == 1) {
@@ -947,6 +982,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     }
     
     // image's outlets fot POPTip
+    
     @IBOutlet weak var coinImgLBL: UIImageView!
     @IBOutlet weak var whistleImgLBL: UIImageView!
     @IBOutlet weak var playImgLBL: UIImageView!
@@ -959,6 +995,9 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     var workitem : DispatchWorkItem?
     var workitem2 : DispatchWorkItem?
     var blink = 1
+    
+    // мигание некоторых элементов во время подсказок
+    
     func blinkingSelector (blinkNum: Int) {
         workitem = DispatchWorkItem { self.select_service1.selectedSegmentIndex = 0
             self.blink = 2
@@ -969,9 +1008,9 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             self.blinkingSelector(blinkNum: self.blink)
         }
       if (blinkNum == 1) {
-        DispatchQueue.main.asyncAfter (deadline: .now() + 1.0, execute: workitem!)
+        DispatchQueue.main.asyncAfter (deadline: .now() + 0.5, execute: workitem!)
             } else {
-        DispatchQueue.main.asyncAfter (deadline: .now() + 1.0, execute: workitem2!)
+        DispatchQueue.main.asyncAfter (deadline: .now() + 0.5, execute: workitem2!)
         }
     }
     var workitem3 : DispatchWorkItem?

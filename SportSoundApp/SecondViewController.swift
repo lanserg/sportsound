@@ -11,6 +11,8 @@ import CoreData
 
 class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    // таблица
+    
     func tableView (_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return coreArray.count
     }
@@ -21,13 +23,13 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
 
-    var arrData: [String] = []
+    var arrData: [String] = [] // получаемый массив с данными о матче
     var clearLg: [String] = []
-    var coreArray : [String] = []
+    var coreArray : [String] = [] // массив CoreData
     var result : [Any] = []
     var vcClear : String = ""
 
-    
+    // сравнивание массива в памяти и нового поступившего на наличие отличий
     
     func coreArrayCheck() {
         if (coreArray == arrData) {
@@ -37,7 +39,9 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
-    func arr () -> String {  // for sharing log
+    // for sharing log
+    
+    func arr () -> String {
         var str: String = ""
         for i in coreArray {
             str += "\(i) \n"
@@ -61,6 +65,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
 
+   // ф-и сохранения, извлечения и удаления данных из массива в CoreData
     
     func saveData() {
 
@@ -131,6 +136,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
+    //поделиться
+    
     @IBAction func ShareButton(_ sender: Any) {
         if (coreArray.isEmpty == false) {
         let shareActivity = UIActivityViewController (activityItems: [arr()], applicationActivities: nil)
@@ -156,6 +163,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         arrData.removeAll()
     }
     
+    // очистка таблица с Alert вопросом подтверждения
+    
     @IBAction func ClearLogButton(_ sender: UIButton) {
         let dialogMessage = UIAlertController(title: NSLocalizedString("Deleting history", comment: ""), message: NSLocalizedString("Are you sure you want to delete the history?", comment: ""), preferredStyle: .alert)
 
@@ -179,7 +188,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         self.present(dialogMessage, animated: true, completion: nil)
         }
 
-
+ // прячем navigationBar
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
@@ -189,12 +199,16 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         self.navigationController?.navigationBar.isHidden = false
     }
   
+    // перезапись массива CoreData в случае, если он отличается от вновь полученного
+    
     func checkRewrite () {
         if (arrData.count > 0) {
             saveData()
             arrData.removeAll()
         }
     }
+    
+    // свайп обратно на главную (от Сани)
     
     func swipe() {
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture(gesture:)))
