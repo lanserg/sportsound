@@ -14,15 +14,17 @@
 
 "Remember to change sides every 7 points" = "Не забувай про зміну сторін!";
 
-"<<<Swipe to see the log<<<" = "Змахни вліво, шоб подивитись результати матчів <<<<<";
+"<<<Swipe to see the log<<<" = "Змахни вліво, щоб подивитись результати матчів <<<<<";
 
-"End of:" = "Бажаєш закінчити:";
+"Final whistle" = "Фінальний свисток";
+
+"What do you want to finish?" = "Що ви хочете закінчити?";
 
 "Set" = "Партію";
 
 "Match" = "Матч";
 
-"Deleting history" = "Видаленні результатів";
+"Deleting history" = "Видалення результатів";
 
 "Are you sure you want to delete the history?" = "Ви впевнені, що хочете видалити всі результати матчів?";
 

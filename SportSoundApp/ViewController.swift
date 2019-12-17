@@ -81,8 +81,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     @IBOutlet weak var inputTeam2: UITextField!
     
-    @IBOutlet weak var setButton: UIButton!
-    
     @IBOutlet weak var setLBL: UILabel!
     
     @IBOutlet weak var whistleB: UIButton!
@@ -165,13 +163,22 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     func changeSides () {
         let scoreAmount = score1 + score2
+        let scoreToVib3set : [Int] = [5, 10, 15, 20, 25,30, 35, 40, 45, 50, 55, 60, 65, 70]
         let scoreToVib : [Int] = [7, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91, 98, 105, 112, 119, 126]
-        for i in scoreToVib {
-            if i == scoreAmount {
-            vibration()
-            }
+            if (setLBL.text == "3") {
+                for i in scoreToVib3set {
+                    if i == scoreAmount {
+                        vibration()
+                    }
+                }
+            } else {
+                for i in scoreToVib {
+                     if i == scoreAmount {
+                        vibration()
+                     }
+                 }
         }
-    }
+}
    
     // функция вибрации
     
@@ -188,21 +195,31 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerUpdate), userInfo: NSDate(), repeats: true)
         timeoutStart.isHidden = true
         timeoutStop.isHidden = false
+        score1Button.isEnabled = false
+        score2Button.isEnabled = false
     }
+    
+               
+    
+    
     
     @objc func timerUpdate () {
         elapse = -(self.timer.userInfo as! NSDate).timeIntervalSinceNow
-        if elapse <= 60 {
-            timerLBL.text = String (format: "%.0f", elapse)
-            if ((elapse >= 30 && elapse < 31) || (elapse >= 59 && elapse < 60)) {
+            let minutes = Int(elapse) / 60 % 60
+            let seconds = Int(elapse) % 60
+        if elapse <= 180 {
+            timerLBL.text = String (format: "%.02i:%.02i", minutes, seconds)
+            if ((elapse >= 30 && elapse < 31) || (elapse >= 59 && elapse < 60) || (elapse >= 90 && elapse < 91) || (elapse >= 120 && elapse < 121) || (elapse >= 150 && elapse < 151) || (elapse >= 179 && elapse < 180)) {
                 vibration()
             }
-        } else if elapse > 60 {
+        } else if elapse > 180 {
             timer.invalidate()
             timerLBL.text = "0"
             timeoutStart.isHidden = false
             timeoutStop.isHidden = true
             elapse = 0
+            score1Button.isEnabled = true
+            score2Button.isEnabled = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                 self.timerLBL.isHidden = true
             }
@@ -218,13 +235,15 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         timeoutStop.isHidden = true
         timeoutStart.isHidden = false
         timerLBL.isHidden = true
+        score1Button.isEnabled = true
+        score2Button.isEnabled = true
     }
    
     // завершение партии/матча
     
     @IBAction func finalWhistleAction(_ sender: Any) {
         if (score1 != score2) {
-        let dialogMessage = UIAlertController(title: NSLocalizedString("End of:", comment: ""), message: "", preferredStyle: .alert)
+            let dialogMessage = UIAlertController(title: NSLocalizedString("Final whistle", comment: ""), message: NSLocalizedString("What do you want to finish?", comment: ""), preferredStyle: .alert)
    
             // ALERT при нажатии кнопки финального свистка для завершения матча или партии
             
@@ -242,6 +261,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                     self.setLBL.text = "4"
                 case "4":
                     self.setLBL.text = "5"
+                case "5":
+                    self.setLBL.text = "1"
                 default:
                     break
                 }
@@ -257,6 +278,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                     self.setLBL.text = "4"
                 case "4":
                     self.setLBL.text = "5"
+                case "5":
+                    self.setLBL.text = "1"
                 default:
                     break
                 }
@@ -269,9 +292,11 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             if (self.score1 > 0 && (self.score1 > self.score2)) {
                 self.team1log+=1
                 self.stringequal()
+                self.setLBL.text = "1"
             } else if (self.score2 > 0 && (self.score2 > self.score1)) {
                 self.team2log+=1
                 self.stringequal()
+                self.setLBL.text = "1"
             }
             self.addingToMain()
             self.resetAllData()
@@ -381,9 +406,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     @IBAction func score1plus(_ sender: Any) {
         servNumLBL1.isHidden = false
-       if (saveServ == 0) {
             sc2 = 0
-        }
         if (sc1 == 0 && servNumLBL1.text == "1") {
             servNumLBL1.text = "2"
         } else if (sc1 == 0 && servNumLBL1.text == "2"){
@@ -394,7 +417,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             servNumLBL1.text = "2"
         }
         sc1+=1
-        print("sc1 =", sc1)
         finalWhistleButton.isEnabled = true
             if (score1 < 99) {
                 score1+=1
@@ -423,13 +445,30 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         saveServ = 0
     }
     
+    // свайп вверх и вниз для очков команды1
+    
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
             switch sender.direction {
             case .up:
                 if (score1 >= 0 && score1 < 99) {
+                    servNumLBL1.isHidden = false
+                               sc2 = 0
+                           if (sc1 == 0 && servNumLBL1.text == "1") {
+                               servNumLBL1.text = "2"
+                           } else if (sc1 == 0 && servNumLBL1.text == "2"){
+                               servNumLBL1.text = "1"
+                           }  else if (sc1 != 0 && servNumLBL1.text == "1"){
+                               servNumLBL1.text = "1"
+                           }  else if (sc1 != 0 && servNumLBL1.text == "2"){
+                               servNumLBL1.text = "2"
+                           }
+                           sc1+=1
                     score1+=1
                 score1LBL.text = NSString (format: "%i", score1) as String
+                    serviceBallImg.isHidden = false
+                    servNumLBL2.isHidden = true
+                    serviceBall2Img.isHidden = true
                     if (score1LBL.text == "1") {
                         select_service1.isHidden = false
                         serviceBallImg.isHidden = true
@@ -458,13 +497,11 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         }
     }
 
- // добавление очков второй команде и свайп вниз для минус один
+ // добавление очков второй команде
     
     @IBAction func score2plus(_ sender: Any) {
         servNumLBL2.isHidden = false
-        if (saveServ == 0) {
         sc1 = 0
-        }
         if (sc2 == 0 && servNumLBL2.text == "1") {
             servNumLBL2.text = "2"
         } else if (sc2 == 0 && servNumLBL2.text == "2"){
@@ -475,7 +512,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             servNumLBL2.text = "2"
         }
         sc2+=1
-        print("sc2 =", sc2)
         finalWhistleButton.isEnabled = true
         if (score2 < 99) {
         score2+=1
@@ -501,16 +537,33 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         } else {
             select_service2.isHidden = true
         }
-        saveServ = 0
+        saveServ = 0                            // доделать сброс подающего игрока при свайпе вниз
     }
+    
+    // свайп вверх и вниз для очков команды2
     
     @objc func handleSwipe2(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
             switch sender.direction {
             case .up:
                 if (score2 >= 0 && score2 < 99) {
+                    servNumLBL2.isHidden = false
+                    sc1 = 0
+                    if (sc2 == 0 && servNumLBL2.text == "1") {
+                        servNumLBL2.text = "2"
+                    } else if (sc2 == 0 && servNumLBL2.text == "2"){
+                        servNumLBL2.text = "1"
+                    }  else if (sc2 != 0 && servNumLBL2.text == "1"){
+                        servNumLBL2.text = "1"
+                    }  else if (sc2 != 0 && servNumLBL2.text == "2"){
+                        servNumLBL2.text = "2"
+                    }
+                    sc2+=1
                 score2+=1
                 score2LBL.text = NSString (format: "%i", score2) as String
+                    serviceBallImg.isHidden = true
+                    serviceBall2Img.isHidden = false
+                    servNumLBL1.isHidden = true
                     if (score2LBL.text == "1") {
                         select_service2.isHidden = false
                         serviceBall2Img.isHidden = true
@@ -523,6 +576,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                 if (score2 > 0 && score2 <= 99) {
                 score2-=1
                 score2LBL.text = NSString (format: "%i", score2) as String
+                
                     if (score2LBL.text == "1") {
                         select_service2.isHidden = false
                         serviceBall2Img.isHidden = true
@@ -623,7 +677,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     var saveServ = 0
     var servNumStr = ""
     
- // ф-я смены сторон каждые 7 очков
+ // ф-я смены сторон каждые 7(5) очков
     
     func sButton() {
         saveServ = 1
@@ -639,6 +693,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         servNum = sc1
         sc1 = sc2
         sc2 = servNum
+        print("change sc1 =", sc1)
+        print("change sc2 =", sc2)
         if (servNumLBL1.isHidden == true) {
             servNumLBL1.isHidden = false
             servNumLBL2.isHidden = true
@@ -806,7 +862,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         atackBTN.isEnabled = true
         awesomeBTN.isEnabled = true
         whistleB.isEnabled = true
-        setButton.isEnabled = true
         score1Button.isEnabled = true
         score2Button.isEnabled = true
         resetButton.isEnabled = true
@@ -835,7 +890,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         atackBTN.isEnabled = false
         awesomeBTN.isEnabled = false
         whistleB.isEnabled = false
-        setButton.isEnabled = false
         select_service1.isHidden = true
         select_service2.isHidden = true
         score1Button.isEnabled = false
@@ -1060,7 +1114,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         inputTeam1.delegate = self
         serviceBallImg.isHidden = true
         serviceBall2Img.isHidden = true
-        timerLBL.isHidden = true
+        //timerLBL.isHidden = true
         timeoutStart.isHidden = false
         timeoutStop.isHidden = true
         finalWhistleButton.isEnabled = false
