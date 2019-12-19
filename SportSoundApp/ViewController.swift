@@ -191,7 +191,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
    // запуск таймера
     
     @IBAction func timerStart(_ sender: Any) {
-        timerLBL.isHidden = false
+        //timerLBL.isHidden = false
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerUpdate), userInfo: NSDate(), repeats: true)
         timeoutStart.isHidden = true
         timeoutStop.isHidden = false
@@ -214,15 +214,15 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             }
         } else if elapse > 180 {
             timer.invalidate()
-            timerLBL.text = "0"
+            timerLBL.text = "00:00"
             timeoutStart.isHidden = false
             timeoutStop.isHidden = true
             elapse = 0
             score1Button.isEnabled = true
             score2Button.isEnabled = true
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                self.timerLBL.isHidden = true
-            }
+          //  DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+          //      self.timerLBL.isHidden = true
+          //  }
         }
     }
     
@@ -231,10 +231,10 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     @IBAction func timerStop(_ sender: Any) {
         timer.invalidate()
-        timerLBL.text = "0"
+        timerLBL.text = "00:00"
         timeoutStop.isHidden = true
         timeoutStart.isHidden = false
-        timerLBL.isHidden = true
+        //timerLBL.isHidden = true
         score1Button.isEnabled = true
         score2Button.isEnabled = true
     }
@@ -481,12 +481,13 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                 if (score1 > 0 && score1 <= 99) {
                     score1-=1
                 score1LBL.text = NSString (format: "%i", score1) as String
-                    if (score1LBL.text == "1") {
+                   // if (score1LBL.text == "1") {
                         select_service1.isHidden = false
                         serviceBallImg.isHidden = true
-                    } else {
-                        select_service1.isHidden = true
-                    }
+                    select_service2.isHidden = false
+                 //   } else {
+                   //     select_service1.isHidden = true
+                  //  }
                     if (score1LBL.text == "0" && score2LBL.text == "0") {
                         finalWhistleButton.isEnabled = false
                     }
@@ -569,7 +570,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                         serviceBall2Img.isHidden = true
                     }
                     else {
-                        select_service2.isHidden = true
+                 
+                    select_service2.isHidden = true
                     }
                 }
             case .down:
@@ -577,12 +579,13 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                 score2-=1
                 score2LBL.text = NSString (format: "%i", score2) as String
                 
-                    if (score2LBL.text == "1") {
+                 //   if (score2LBL.text == "1") {
+                    select_service1.isHidden = false
                         select_service2.isHidden = false
                         serviceBall2Img.isHidden = true
-                    } else {
-                        select_service2.isHidden = true
-                    }
+                //    } else {
+                //        select_service2.isHidden = true
+                //    }
                     if (score1LBL.text == "0" && score2LBL.text == "0") {
                         finalWhistleButton.isEnabled = false
                     }
@@ -857,6 +860,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         timeoutStart.backgroundColor = .white
         resetButton.backgroundColor = .white
         timeoutStop.backgroundColor = .white
+        timerLBL.backgroundColor = .white
         DigBtn.isEnabled = true
         blockBTN.isEnabled = true
         atackBTN.isEnabled = true
@@ -885,6 +889,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         timeoutStart.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
         resetButton.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
         timeoutStop.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
+        timerLBL.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
         DigBtn.isEnabled = false
         blockBTN.isEnabled = false
         atackBTN.isEnabled = false
@@ -1078,28 +1083,28 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                 self.blink = 2
                 self.blinkingCoin(blinkNum: self.blink)
             }
-            DispatchQueue.main.asyncAfter (deadline: .now() + 1.0, execute: workitem3!)
+            DispatchQueue.main.asyncAfter (deadline: .now() + 0.5, execute: workitem3!)
         } else {
             let image2 : UIImage = UIImage(named: "bitcoin")!
             workitem4 = DispatchWorkItem { self.randomCoinImage.image = image2
                 self.blink = 1
                 self.blinkingCoin(blinkNum: self.blink)
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0,execute: workitem4!)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5,execute: workitem4!)
         }
     }
     
     func blinkingPlay (blinkNum: Int) {
         if (blinkNum == 1) {
             let image1 : UIImage = UIImage(named: "play-button")!
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.playImgLBL.image = image1
                 self.blink = 2
                 self.blinkingPlay(blinkNum: self.blink)
             }
         } else {
             let image2 : UIImage = UIImage(named: "pauseBtn")!
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.playImgLBL.image = image2
                 self.blink = 1
                 self.blinkingPlay(blinkNum: self.blink)
@@ -1114,7 +1119,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         inputTeam1.delegate = self
         serviceBallImg.isHidden = true
         serviceBall2Img.isHidden = true
-        //timerLBL.isHidden = true
         timeoutStart.isHidden = false
         timeoutStop.isHidden = true
         finalWhistleButton.isEnabled = false
@@ -1124,6 +1128,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         popTip.bubbleColor = .white
         popTip.textColor = UIColor(red:1.00, green:0.40, blue:0.00, alpha:0.8)
         popTip.shouldDismissOnTap = true
+      //  timerLBL.text = "00:00"
     }
     
 }
