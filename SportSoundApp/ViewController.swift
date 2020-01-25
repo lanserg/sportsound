@@ -346,10 +346,10 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         score2LBL.text = NSString (format: "%i", score2) as String
         team1log = 0
         team2log = 0
-        team1 = ""
-        team2 = ""
-        t1 = ""
-        t2 = ""
+        team1 = NSLocalizedString("Team 1", comment: "")
+        team2 = NSLocalizedString("Team 2", comment: "")
+        t1 = NSLocalizedString("Team 1", comment: "")
+        t2 = NSLocalizedString("Team 2", comment: "")
         inputTeam1.text = NSString (format: "%@", team1) as String
         inputTeam2.text = NSString (format: "%@", team2) as String
         serviceBallImg.isHidden = true
@@ -361,8 +361,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         setLBL.text = "1"
     }
 
-    var t1 = ""
-    var t2 = ""
+    var t1 = NSLocalizedString("Team 1", comment: "")
+    var t2 = NSLocalizedString("Team 2", comment: "")
     var s1 = 0
     var s2 = 0
     
@@ -370,25 +370,25 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        if (inputTeam1.text == "") {
+            team1 = NSLocalizedString("Team 1", comment: "")
+            t1 = NSLocalizedString("Team 1", comment: "")
+        } else {
         team1 = inputTeam1.text!
-        team2 = inputTeam2.text!
         t1 = inputTeam1.text!
-        t2 = inputTeam2.text!
+        }
+        if (inputTeam2.text == "") {
+             team2 = NSLocalizedString("Team 2", comment: "")
+             t2 = NSLocalizedString("Team 2", comment: "")
+         } else {
+         team2 = inputTeam2.text!
+         t2 = inputTeam2.text!
+         }
         return true
     }
   
     // текущая партия, установка вручную
-    
-    @IBAction func setPlusButton(_ sender: Any) {
-        if (set < 5) {
-        set+=1
-        setLBL.text = NSString (format: "%i", set) as String
-        } else {
-            set=1
-            setLBL.text = NSString (format: "%i", set) as String
-        }
-    }
-    
+        
     @IBAction func insertTeam1(_ sender: Any) {
     }
     
@@ -465,6 +465,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                            }
                            sc1+=1
                     score1+=1
+                    changeSides()
                 score1LBL.text = NSString (format: "%i", score1) as String
                     serviceBallImg.isHidden = false
                     servNumLBL2.isHidden = true
@@ -480,6 +481,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             case .down:
                 if (score1 > 0 && score1 <= 99) {
                     score1-=1
+                    changeSides()
                 score1LBL.text = NSString (format: "%i", score1) as String
                    // if (score1LBL.text == "1") {
                         select_service1.isHidden = false
@@ -561,6 +563,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                     }
                     sc2+=1
                 score2+=1
+                changeSides()
                 score2LBL.text = NSString (format: "%i", score2) as String
                     serviceBallImg.isHidden = true
                     serviceBall2Img.isHidden = false
@@ -577,6 +580,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             case .down:
                 if (score2 > 0 && score2 <= 99) {
                 score2-=1
+                changeSides()
                 score2LBL.text = NSString (format: "%i", score2) as String
                 
                  //   if (score2LBL.text == "1") {
@@ -790,16 +794,19 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     @IBAction func randomButtom(_ sender: Any) {
         let randomInt = Int.random(in: 1...2)
-        randomCoinImage.isHidden = false
-        if (randomInt == 1) {
-            let image1 : UIImage = UIImage(named: "euro")!
-            randomCoinImage.image = image1
-        } else {
-            let image2 : UIImage = UIImage(named: "bitcoin")!
-            randomCoinImage.image = image2
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.randomCoinImage.isHidden = true
+        randomB.isEnabled = false
+            if (randomInt == 1) {
+                blinkingTeam1(blink: blinkingMarker)
+            } else {
+                blinkingTeam2(blink: blinkingMarker)
+            }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
+            self.workitemteam1?.cancel()
+            self.workitemteam2?.cancel()
+            self.workitemteam3?.cancel()
+            self.workitemteam4?.cancel()
+            self.blinkingMarker = 1
+            self.randomB.isEnabled = true
         }
     }
     
@@ -998,6 +1005,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             popTip.actionAnimation = .bounce(5)
             workitem3?.cancel()
             workitem4?.cancel()
+            inputTeam1.isHidden = false
+            inputTeam2.isHidden = false
             coinImgLBL.isHidden = true
             randomB.isHidden = false
             randomCoinImage.isHidden = true
@@ -1078,15 +1087,17 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     func blinkingCoin (blinkNum: Int) {
         if (blinkNum == 1) {
-            let image1 : UIImage = UIImage(named: "euro")!
-            workitem3 = DispatchWorkItem { self.randomCoinImage.image = image1
+            workitem3 = DispatchWorkItem {
+                self.inputTeam1.isHidden = false
+                self.inputTeam2.isHidden = true
                 self.blink = 2
                 self.blinkingCoin(blinkNum: self.blink)
             }
             DispatchQueue.main.asyncAfter (deadline: .now() + 0.5, execute: workitem3!)
         } else {
-            let image2 : UIImage = UIImage(named: "bitcoin")!
-            workitem4 = DispatchWorkItem { self.randomCoinImage.image = image2
+            workitem4 = DispatchWorkItem {
+                self.inputTeam1.isHidden = true
+                self.inputTeam2.isHidden = false
                 self.blink = 1
                 self.blinkingCoin(blinkNum: self.blink)
             }
@@ -1111,12 +1122,56 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             }
         }
     }
+   
+    var workitemteam1 : DispatchWorkItem?
+    var workitemteam2 : DispatchWorkItem?
+    var workitemteam3 : DispatchWorkItem?
+    var workitemteam4 : DispatchWorkItem?
+    var blinkingMarker : Int = 1
+     
+    func blinkingTeam1 (blink: Int) {
+         if (blink == 1) {
+            workitemteam1 = DispatchWorkItem {
+                self.blinkingMarker = 2
+                self.inputTeam1.isHidden = true
+                self.blinkingTeam1(blink: self.blinkingMarker)
+            }
+                DispatchQueue.main.asyncAfter (deadline: .now() + 0.5, execute: workitemteam1!)
+         } else if (blink == 2){
+            workitemteam2 = DispatchWorkItem {
+                self.blinkingMarker = 1
+                self.inputTeam1.isHidden = false
+                self.blinkingTeam1(blink: self.blinkingMarker)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: workitemteam2!)
+         }
+     }
+    
+    func blinkingTeam2 (blink: Int) {
+         if (blink == 1) {
+            workitemteam3 = DispatchWorkItem {
+                self.blinkingMarker = 2
+                self.inputTeam2.isHidden = true
+                self.blinkingTeam2(blink: self.blinkingMarker)
+            }
+                DispatchQueue.main.asyncAfter (deadline: .now() + 0.5, execute: workitemteam3!)
+         } else if (blink == 2){
+            workitemteam4 = DispatchWorkItem {
+                self.blinkingMarker = 1
+                self.inputTeam2.isHidden = false
+                self.blinkingTeam2(blink: self.blinkingMarker)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: workitemteam4!)
+         }
+     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        randomCoinImage.isHidden = true
         inputTeam2.delegate = self
         inputTeam1.delegate = self
+        inputTeam1.text = NSLocalizedString("Team 1", comment: "")
+        inputTeam2.text = NSLocalizedString("Team 2", comment: "")
         serviceBallImg.isHidden = true
         serviceBall2Img.isHidden = true
         timeoutStart.isHidden = false
@@ -1128,8 +1183,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         popTip.bubbleColor = .white
         popTip.textColor = UIColor(red:1.00, green:0.40, blue:0.00, alpha:0.8)
         popTip.shouldDismissOnTap = true
-      //  timerLBL.text = "00:00"
     }
-    
 }
 

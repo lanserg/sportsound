@@ -227,6 +227,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         savingData()
         getData()
         swipe()
+        tableView.backgroundColor = .white
     }
     
 }
