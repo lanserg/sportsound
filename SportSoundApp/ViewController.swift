@@ -996,7 +996,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                 coinImgLBL.isHidden = false
                 randomB.isHidden = true
                 select_service1.isHidden = true
-                randomCoinImage.isHidden = false
                 popTip.actionAnimation = .bounce(5)
                 blinkingCoin(blinkNum: blink)
                 tipNumber = 6
@@ -1009,7 +1008,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             inputTeam2.isHidden = false
             coinImgLBL.isHidden = true
             randomB.isHidden = false
-            randomCoinImage.isHidden = true
             finalWhistleButton.isHidden = true
             finalImgLBL.isHidden = false
             tipNumber = 7
