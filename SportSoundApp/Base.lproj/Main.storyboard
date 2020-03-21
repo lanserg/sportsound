@@ -26,7 +26,7 @@
         <!--VolleyApp-->
         <scene sceneID="KO1-bJ-EC6">
             <objects>
-                <viewController storyboardIdentifier="FirstVC" wantsFullScreenLayout="YES" id="ZbZ-Rv-BpH" customClass="ViewController" customModule="SportSoundApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstVC" modalPresentationStyle="fullScreen" id="ZbZ-Rv-BpH" customClass="ViewController" customModule="SportSoundApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="900-8g-gg8"/>
                         <viewControllerLayoutGuide type="bottom" id="ZH3-i7-Vuu"/>

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		023DB039228459A8007D35D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023DB037228459A8007D35D1 /* Main.storyboard */; };
+		046F891624260F8F00DBE0B2 /* Pods_SportSoundApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D98B1BC092C1347874D51 /* Pods_SportSoundApp.framework */; };
 		3291552BC258ADE4A3AA2202 /* Pods_SportSoundAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F51255269BB2AAF71AD685 /* Pods_SportSoundAppTests.framework */; };
-		3818EC0D801A1219CEA3CA02 /* Pods_SportSoundApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D98B1BC092C1347874D51 /* Pods_SportSoundApp.framework */; };
 		B116A2DF22E24C32004ECE1D /* cheer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B116A2DE22E24C31004ECE1D /* cheer.mp3 */; };
 		B11F628F21FE633300363DFE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11F628E21FE633200363DFE /* SecondViewController.swift */; };
 		B13AEC9D22CF7D9200030376 /* ssapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B13AEC9B22CF7D9200030376 /* ssapp.xcdatamodeld */; };
@@ -61,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		023DB038228459A8007D35D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		046F8919242610B200DBE0B2 /* AMPopTip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AMPopTip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		318516973E69870352B1A255 /* Pods-SportSoundAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SportSoundAppTests/Pods-SportSoundAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		47CFF83B9B3E81D5CE5ADCDF /* Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SportSoundApp-SportSoundAppUITests/Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5C43BE99EDD06CF53F7B43FC /* Pods-SportSoundApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundApp.debug.xcconfig"; path = "Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3818EC0D801A1219CEA3CA02 /* Pods_SportSoundApp.framework in Frameworks */,
+				046F891624260F8F00DBE0B2 /* Pods_SportSoundApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +149,7 @@
 		2A527E2A751E9847FB43226E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				046F8919242610B200DBE0B2 /* AMPopTip.framework */,
 				621D98B1BC092C1347874D51 /* Pods_SportSoundApp.framework */,
 				EE24A2C4E6C0ED621186A1F0 /* Pods_SportSoundApp_SportSoundAppUITests.framework */,
 				71F51255269BB2AAF71AD685 /* Pods_SportSoundAppTests.framework */,

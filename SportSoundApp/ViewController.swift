@@ -54,8 +54,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     var timer = Timer()
     
     @IBOutlet weak var SetNameLBL: UILabel!
-    
-    //var lang1 = ""
 
     @IBOutlet weak var finalWhistleButton: UIButton!
     
@@ -191,17 +189,12 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
    // запуск таймера
     
     @IBAction func timerStart(_ sender: Any) {
-        //timerLBL.isHidden = false
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerUpdate), userInfo: NSDate(), repeats: true)
         timeoutStart.isHidden = true
         timeoutStop.isHidden = false
         score1Button.isEnabled = false
         score2Button.isEnabled = false
     }
-    
-               
-    
-    
     
     @objc func timerUpdate () {
         elapse = -(self.timer.userInfo as! NSDate).timeIntervalSinceNow
@@ -220,9 +213,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
             elapse = 0
             score1Button.isEnabled = true
             score2Button.isEnabled = true
-          //  DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-          //      self.timerLBL.isHidden = true
-          //  }
         }
     }
     
@@ -304,7 +294,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         
         dialogMessage.addAction(set)
         dialogMessage.addAction(match)
-       // self.present(dialogMessage, animated: true, completion: nil)
 
         self.present(dialogMessage, animated: true) {
             dialogMessage.view.superview?.isUserInteractionEnabled = true
@@ -582,14 +571,10 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
                 score2-=1
                 changeSides()
                 score2LBL.text = NSString (format: "%i", score2) as String
-                
-                 //   if (score2LBL.text == "1") {
+
                     select_service1.isHidden = false
                         select_service2.isHidden = false
                         serviceBall2Img.isHidden = true
-                //    } else {
-                //        select_service2.isHidden = true
-                //    }
                     if (score1LBL.text == "0" && score2LBL.text == "0") {
                         finalWhistleButton.isEnabled = false
                     }
@@ -725,7 +710,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         }
     }
 
-    // ф-я аудиоплеера с создание сессии
+    // ф-я аудиоплеера с созданием сессии
     
     func playSound() {
         do {
