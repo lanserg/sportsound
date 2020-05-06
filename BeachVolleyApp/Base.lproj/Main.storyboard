@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7zw-uP-kyl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7zw-uP-kyl">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +26,7 @@
         <!--VolleyApp-->
         <scene sceneID="KO1-bJ-EC6">
             <objects>
-                <viewController storyboardIdentifier="FirstVC" modalPresentationStyle="fullScreen" id="ZbZ-Rv-BpH" customClass="ViewController" customModule="SportSoundApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstVC" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="ZbZ-Rv-BpH" customClass="ViewController" customModule="BeachVolleyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="900-8g-gg8"/>
                         <viewControllerLayoutGuide type="bottom" id="ZH3-i7-Vuu"/>
@@ -67,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbx-8g-z56" userLabel="ServiceButton">
-                                <rect key="frame" x="206.5" y="90" width="50" height="50"/>
+                                <rect key="frame" x="206.5" y="134" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Rsf-Qd-rfn"/>
                                     <constraint firstAttribute="height" constant="50" id="buE-mv-MUm"/>
@@ -198,14 +198,14 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="point1hr" translatesAutoresizingMaskIntoConstraints="NO" id="0HB-Em-hce">
-                                <rect key="frame" x="178.5" y="45" width="21" height="7"/>
+                                <rect key="frame" x="178.5" y="89" width="21" height="7"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="dno-Eb-3a2"/>
                                     <constraint firstAttribute="width" constant="21" id="vab-aZ-hAn"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHW-BB-5Ak" userLabel="blockButton">
-                                <rect key="frame" x="118.5" y="90" width="50" height="50"/>
+                                <rect key="frame" x="118.5" y="134" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5Ux-Im-Boz"/>
                                     <constraint firstAttribute="width" constant="50" id="XyO-b9-yfe"/>
@@ -223,7 +223,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDq-cf-Ow7">
-                                <rect key="frame" x="293.5" y="90" width="50" height="50"/>
+                                <rect key="frame" x="293.5" y="134" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="RM7-2d-Oie"/>
                                     <constraint firstAttribute="height" constant="50" id="xvG-sW-zL2"/>
@@ -244,7 +244,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x29-qr-C6H" userLabel="digButton">
-                                <rect key="frame" x="31.5" y="90" width="50" height="50"/>
+                                <rect key="frame" x="31.5" y="134" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2C4-fr-Qow"/>
                                     <constraint firstAttribute="width" constant="50" id="7wC-7H-f7e"/>
@@ -401,7 +401,7 @@
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daba" translatesAutoresizingMaskIntoConstraints="NO" id="GfP-pA-dTd">
-                                <rect key="frame" x="17.5" y="75" width="340" height="80"/>
+                                <rect key="frame" x="17.5" y="119" width="340" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="0Kh-Nb-0pJ"/>
                                     <constraint firstAttribute="width" constant="340" id="uZn-K9-5Wc"/>
@@ -600,7 +600,7 @@
                         <outlet property="tip1LBL" destination="hRL-D3-tUA" id="Nsa-R7-iqE"/>
                         <outlet property="whistleB" destination="RJU-DP-W1F" id="7MG-zb-h0u"/>
                         <outlet property="whistleImgLBL" destination="oco-Lt-tG9" id="Q7D-1I-tZR"/>
-                        <segue destination="ZFd-3n-lJI" kind="show" identifier="toSecondVC" id="vyI-ZC-OHC"/>
+                        <segue destination="ZFd-3n-lJI" kind="showDetail" identifier="toSecondVC" id="vyI-ZC-OHC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AI8-3m-iy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -620,7 +620,7 @@
         <!--Log-->
         <scene sceneID="5IS-9a-1ib">
             <objects>
-                <viewController storyboardIdentifier="SecondVC" wantsFullScreenLayout="YES" id="ZFd-3n-lJI" customClass="SecondViewController" customModule="SportSoundApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" wantsFullScreenLayout="YES" id="ZFd-3n-lJI" customClass="SecondViewController" customModule="BeachVolleyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SoT-et-d58"/>
                         <viewControllerLayoutGuide type="bottom" id="ByV-6w-jy9"/>
@@ -630,7 +630,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vuo-sx-Ae7">
-                                <rect key="frame" x="16" y="180" width="343" height="479"/>
+                                <rect key="frame" x="16" y="224" width="343" height="435"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="BD3-Jt-wgk"/>
@@ -654,13 +654,13 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHt-0D-yLi">
-                                <rect key="frame" x="169.5" y="118" width="36" height="18"/>
+                                <rect key="frame" x="169.5" y="162" width="36" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.94901960780000005" green="0.39607843139999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNj-kJ-AqA" userLabel="clearButton">
-                                <rect key="frame" x="296.5" y="112" width="24" height="24"/>
+                                <rect key="frame" x="296.5" y="156" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="gIt-Nd-16B"/>
                                     <constraint firstAttribute="width" constant="24" id="mBU-pF-NiL"/>
@@ -672,7 +672,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwf-4u-EEf" userLabel="shareButton">
-                                <rect key="frame" x="54" y="110" width="18" height="24"/>
+                                <rect key="frame" x="54" y="154" width="18" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="XZN-xI-MZz"/>
                                     <constraint firstAttribute="width" constant="18" id="i16-ne-JBm"/>
@@ -685,7 +685,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="point2hr" translatesAutoresizingMaskIntoConstraints="NO" id="Cte-gv-aNz">
-                                <rect key="frame" x="177" y="45" width="21" height="7"/>
+                                <rect key="frame" x="177" y="89" width="21" height="7"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="21" id="77W-6Z-iJI"/>
                                     <constraint firstAttribute="height" constant="7" id="QXm-t3-ReA"/>
@@ -723,6 +723,10 @@
             <point key="canvasLocation" x="3287.1999999999998" y="205.54722638680661"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vyI-ZC-OHC"/>
+        <segue reference="cuP-Bq-hu8"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Group 2 (2)" width="200" height="200"/>
         <image name="Group 2.1" width="200" height="200"/>
@@ -745,8 +749,4 @@
         <image name="whistle (1)" width="212" height="212"/>
         <image name="whistleButton" width="53" height="32"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="vyI-ZC-OHC"/>
-        <segue reference="YC2-yG-Nbe"/>
-    </inferredMetricsTieBreakers>
 </document>

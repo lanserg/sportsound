@@ -28,8 +28,9 @@ class ReadyViewController: UIViewController {
     @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == .left {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let mainVC = storyboard.instantiateViewController(withIdentifier: "NaviVC") as! UINavigationController
+            let mainVC = storyboard.instantiateViewController(withIdentifier: "FirstVC") as! UINavigationController
             mainVC.modalTransitionStyle = .flipHorizontal
+            
             self.present(mainVC, animated: true)
         } else if gesture.direction == .right {
             let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
@@ -41,7 +42,7 @@ class ReadyViewController: UIViewController {
     @IBAction func toAppButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-        let  mainVC = storyboard.instantiateViewController(withIdentifier: "NaviVC") as! UINavigationController
+        let  mainVC = storyboard.instantiateViewController(withIdentifier: "FirstVC") 
         mainVC.modalTransitionStyle = .flipHorizontal
         self.present(mainVC, animated: true, completion: nil)
 
