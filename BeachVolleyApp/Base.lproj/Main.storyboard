@@ -10,7 +10,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Xdu-Co-Rq8">
             <objects>
-                <navigationController storyboardIdentifier="NaviVC" id="7zw-uP-kyl" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NaviVC" modalPresentationStyle="fullScreen" id="7zw-uP-kyl" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Bh-fL-rXx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -92,6 +92,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Team" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O6k-bh-PQ2" colorLabel="IBBuiltInLabel-Red">
                                 <rect key="frame" x="22" y="216.5" width="100" height="25"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.94901960780000005" green="0.39607843139999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="DtT-Sn-wyc"/>
                                     <constraint firstAttribute="height" constant="25" id="YWt-X9-BaS"/>
@@ -441,6 +442,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Team" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cjn-K0-7mE">
                                 <rect key="frame" x="256" y="216.5" width="100" height="25"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.94901960780000005" green="0.39607843139999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="8AG-9T-QhJ"/>
                                     <constraint firstAttribute="width" constant="100" id="edb-WQ-Nh8"/>
@@ -600,7 +602,7 @@
                         <outlet property="tip1LBL" destination="hRL-D3-tUA" id="Nsa-R7-iqE"/>
                         <outlet property="whistleB" destination="RJU-DP-W1F" id="7MG-zb-h0u"/>
                         <outlet property="whistleImgLBL" destination="oco-Lt-tG9" id="Q7D-1I-tZR"/>
-                        <segue destination="ZFd-3n-lJI" kind="showDetail" identifier="toSecondVC" id="vyI-ZC-OHC"/>
+                        <segue destination="ZFd-3n-lJI" kind="show" identifier="toSecondVC" id="vyI-ZC-OHC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AI8-3m-iy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
