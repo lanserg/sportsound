@@ -9,36 +9,33 @@
 /* Begin PBXBuildFile section */
 		023DB039228459A8007D35D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023DB037228459A8007D35D1 /* Main.storyboard */; };
 		046F891624260F8F00DBE0B2 /* Pods_SportSoundApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D98B1BC092C1347874D51 /* Pods_SportSoundApp.framework */; };
+		0479397024649D2500514017 /* Sport Summer Party .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0479396F24649D2500514017 /* Sport Summer Party .mp3 */; };
+		0479397224649D3D00514017 /* Extreme Sport full edit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0479397124649D3D00514017 /* Extreme Sport full edit.mp3 */; };
+		0479397424649DC000514017 /* Fast Sport Energetic Rock (Full).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0479397324649DC000514017 /* Fast Sport Energetic Rock (Full).mp3 */; };
+		0479397624649DD600514017 /* The Sport Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0479397524649DD600514017 /* The Sport Music.mp3 */; };
+		0479397824649E1500514017 /* Oleg Kashchenko - Sport Summer Dubstep Fashion Pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0479397724649E1500514017 /* Oleg Kashchenko - Sport Summer Dubstep Fashion Pop.mp3 */; };
+		0479397A24649E3000514017 /* Sport Summer Dance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0479397924649E3000514017 /* Sport Summer Dance.mp3 */; };
+		0479397C24649E4A00514017 /* Energy Sport Fun Upbeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0479397B24649E4A00514017 /* Energy Sport Fun Upbeat.mp3 */; };
 		3291552BC258ADE4A3AA2202 /* Pods_SportSoundAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F51255269BB2AAF71AD685 /* Pods_SportSoundAppTests.framework */; };
 		B116A2DF22E24C32004ECE1D /* cheer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B116A2DE22E24C31004ECE1D /* cheer.mp3 */; };
 		B11F628F21FE633300363DFE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11F628E21FE633200363DFE /* SecondViewController.swift */; };
 		B13AEC9D22CF7D9200030376 /* ssapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B13AEC9B22CF7D9200030376 /* ssapp.xcdatamodeld */; };
 		B1475118233C1A09005C4339 /* whistle_long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1475117233C1A08005C4339 /* whistle_long.mp3 */; };
 		B15F923A2382A2760006B9A9 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15F923C2382A2760006B9A9 /* Onboarding.storyboard */; };
-		B16805332221388E00074350 /* whistle_orig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16805322221388E00074350 /* whistle_orig.mp3 */; };
-		B168053522213C2500074350 /* whistle_serv.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B168053422213C2500074350 /* whistle_serv.mp3 */; };
-		B168053722213CFB00074350 /* serv_whistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B168053622213CF900074350 /* serv_whistle.mp3 */; };
-		B169701E2328F2FA00B3B961 /* soundOfTimeout1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B169701B2328F2FA00B3B961 /* soundOfTimeout1.mp3 */; };
-		B169701F2328F2FA00B3B961 /* soundOfTimeout2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B169701C2328F2FA00B3B961 /* soundOfTimeout2.mp3 */; };
-		B16CDA6421E55B7200CD222C /* oou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6321E55B7200CD222C /* oou.mp3 */; };
 		B16CDA6621E55B8200CD222C /* unluck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6521E55B8200CD222C /* unluck.mp3 */; };
 		B16CDA6821E55C1800CD222C /* monsterBlock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */; };
 		B16CDA6A21E55C3300CD222C /* buzzle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6921E55C3300CD222C /* buzzle.mp3 */; };
-		B16CDA6C21E55C6800CD222C /* whistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B16CDA6B21E55C6800CD222C /* whistle.mp3 */; };
 		B17BB40B2388029D00FB11B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B17BB4092388029D00FB11B2 /* Localizable.strings */; };
-		B17BB40E23885B1400FB11B2 /* soundOfTimeout3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17BB40D23885B1400FB11B2 /* soundOfTimeout3.mp3 */; };
 		B196753C2386E40900A5D3D6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B196753E2386E40900A5D3D6 /* Launch Screen.storyboard */; };
 		B1B2C65323A4F6DB0019F1AA /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C65223A4F6DB0019F1AA /* LaunchViewController.swift */; };
 		B1C114FC23355E9600BB8ED5 /* WhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FB23355E9600BB8ED5 /* WhistleViewController.swift */; };
 		B1C114FE23355ED200BB8ED5 /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FD23355ED200BB8ED5 /* IconsViewController.swift */; };
 		B1C1150023355EF000BB8ED5 /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C114FF23355EF000BB8ED5 /* ReadyViewController.swift */; };
-		B1C18BE823265A8A0019BF15 /* soundOfTimeout.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1C18BE723265A890019BF15 /* soundOfTimeout.mp3 */; };
 		B1E06D2821E3E8B2008C361A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D2721E3E8B2008C361A /* AppDelegate.swift */; };
 		B1E06D2A21E3E8B2008C361A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D2921E3E8B2008C361A /* ViewController.swift */; };
 		B1E06D2F21E3E8BD008C361A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E06D2E21E3E8BD008C361A /* Assets.xcassets */; };
 		B1E06D3D21E3E8BE008C361A /* SportSoundAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D3C21E3E8BE008C361A /* SportSoundAppTests.swift */; };
 		B1E06D4821E3E8BE008C361A /* SportSoundAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E06D4721E3E8BE008C361A /* SportSoundAppUITests.swift */; };
-		B1E33E8F21E40CCF0006ED59 /* magic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1E33E8E21E40CCF0006ED59 /* magic.mp3 */; };
 		F9F3F43DF5586E5DDB26975E /* Pods_SportSoundApp_SportSoundAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE24A2C4E6C0ED621186A1F0 /* Pods_SportSoundApp_SportSoundAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +59,13 @@
 /* Begin PBXFileReference section */
 		023DB038228459A8007D35D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		046F8919242610B200DBE0B2 /* AMPopTip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AMPopTip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0479396F24649D2500514017 /* Sport Summer Party .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sport Summer Party .mp3"; sourceTree = "<group>"; };
+		0479397124649D3D00514017 /* Extreme Sport full edit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Extreme Sport full edit.mp3"; sourceTree = "<group>"; };
+		0479397324649DC000514017 /* Fast Sport Energetic Rock (Full).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fast Sport Energetic Rock (Full).mp3"; sourceTree = "<group>"; };
+		0479397524649DD600514017 /* The Sport Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Sport Music.mp3"; sourceTree = "<group>"; };
+		0479397724649E1500514017 /* Oleg Kashchenko - Sport Summer Dubstep Fashion Pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Oleg Kashchenko - Sport Summer Dubstep Fashion Pop.mp3"; sourceTree = "<group>"; };
+		0479397924649E3000514017 /* Sport Summer Dance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sport Summer Dance.mp3"; sourceTree = "<group>"; };
+		0479397B24649E4A00514017 /* Energy Sport Fun Upbeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Energy Sport Fun Upbeat.mp3"; sourceTree = "<group>"; };
 		318516973E69870352B1A255 /* Pods-SportSoundAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SportSoundAppTests/Pods-SportSoundAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		47CFF83B9B3E81D5CE5ADCDF /* Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SportSoundApp-SportSoundAppUITests/Pods-SportSoundApp-SportSoundAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5C43BE99EDD06CF53F7B43FC /* Pods-SportSoundApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundApp.debug.xcconfig"; path = "Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,16 +82,9 @@
 		B15F923B2382A2760006B9A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		B15F923E2382A3050006B9A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Onboarding.strings; sourceTree = "<group>"; };
 		B15F92402382A3080006B9A9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Onboarding.strings; sourceTree = "<group>"; };
-		B16805322221388E00074350 /* whistle_orig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_orig.mp3; sourceTree = "<group>"; };
-		B168053422213C2500074350 /* whistle_serv.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle_serv.mp3; sourceTree = "<group>"; };
-		B168053622213CF900074350 /* serv_whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = serv_whistle.mp3; sourceTree = "<group>"; };
-		B169701B2328F2FA00B3B961 /* soundOfTimeout1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout1.mp3; sourceTree = "<group>"; };
-		B169701C2328F2FA00B3B961 /* soundOfTimeout2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout2.mp3; sourceTree = "<group>"; };
-		B16CDA6321E55B7200CD222C /* oou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oou.mp3; sourceTree = "<group>"; };
 		B16CDA6521E55B8200CD222C /* unluck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = unluck.mp3; sourceTree = "<group>"; };
 		B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monsterBlock.mp3; sourceTree = "<group>"; };
 		B16CDA6921E55C3300CD222C /* buzzle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buzzle.mp3; sourceTree = "<group>"; };
-		B16CDA6B21E55C6800CD222C /* whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle.mp3; sourceTree = "<group>"; };
 		B16EF4972387381C0034B71B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
 		B16EF4992387381F0034B71B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "ru.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
 		B17BB4062387F8E700FB11B2 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
@@ -95,13 +92,11 @@
 		B17BB4082387F8E700FB11B2 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Onboarding.strings; sourceTree = "<group>"; };
 		B17BB40A2388029D00FB11B2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B17BB40C23884B2700FB11B2 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B17BB40D23885B1400FB11B2 /* soundOfTimeout3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout3.mp3; sourceTree = "<group>"; };
 		B196753D2386E40900A5D3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B1B2C65223A4F6DB0019F1AA /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		B1C114FB23355E9600BB8ED5 /* WhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistleViewController.swift; sourceTree = "<group>"; };
 		B1C114FD23355ED200BB8ED5 /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
 		B1C114FF23355EF000BB8ED5 /* ReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
-		B1C18BE723265A890019BF15 /* soundOfTimeout.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundOfTimeout.mp3; sourceTree = "<group>"; };
 		B1E06D2421E3E8B2008C361A /* BeachVolleyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeachVolleyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E06D2721E3E8B2008C361A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1E06D2921E3E8B2008C361A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +108,6 @@
 		B1E06D4321E3E8BE008C361A /* BeachVolleyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeachVolleyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E06D4721E3E8BE008C361A /* SportSoundAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportSoundAppUITests.swift; sourceTree = "<group>"; };
 		B1E06D4921E3E8BE008C361A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1E33E8E21E40CCF0006ED59 /* magic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = magic.mp3; sourceTree = "<group>"; };
 		C995F6E119115DF0EBB17DB3 /* Pods-SportSoundApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportSoundApp.release.xcconfig"; path = "Target Support Files/Pods-SportSoundApp/Pods-SportSoundApp.release.xcconfig"; sourceTree = "<group>"; };
 		EE24A2C4E6C0ED621186A1F0 /* Pods_SportSoundApp_SportSoundAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportSoundApp_SportSoundAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -174,20 +168,17 @@
 			isa = PBXGroup;
 			children = (
 				B1475117233C1A08005C4339 /* whistle_long.mp3 */,
-				B168053422213C2500074350 /* whistle_serv.mp3 */,
-				B16805322221388E00074350 /* whistle_orig.mp3 */,
-				B1E33E8E21E40CCF0006ED59 /* magic.mp3 */,
 				B116A2DE22E24C31004ECE1D /* cheer.mp3 */,
-				B1C18BE723265A890019BF15 /* soundOfTimeout.mp3 */,
-				B169701B2328F2FA00B3B961 /* soundOfTimeout1.mp3 */,
-				B169701C2328F2FA00B3B961 /* soundOfTimeout2.mp3 */,
-				B17BB40D23885B1400FB11B2 /* soundOfTimeout3.mp3 */,
-				B16CDA6321E55B7200CD222C /* oou.mp3 */,
-				B168053622213CF900074350 /* serv_whistle.mp3 */,
+				0479396F24649D2500514017 /* Sport Summer Party .mp3 */,
+				0479397124649D3D00514017 /* Extreme Sport full edit.mp3 */,
+				0479397324649DC000514017 /* Fast Sport Energetic Rock (Full).mp3 */,
+				0479397524649DD600514017 /* The Sport Music.mp3 */,
+				0479397724649E1500514017 /* Oleg Kashchenko - Sport Summer Dubstep Fashion Pop.mp3 */,
+				0479397924649E3000514017 /* Sport Summer Dance.mp3 */,
+				0479397B24649E4A00514017 /* Energy Sport Fun Upbeat.mp3 */,
 				B16CDA6521E55B8200CD222C /* unluck.mp3 */,
 				B16CDA6721E55C1800CD222C /* monsterBlock.mp3 */,
 				B16CDA6921E55C3300CD222C /* buzzle.mp3 */,
-				B16CDA6B21E55C6800CD222C /* whistle.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -370,26 +361,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0479397024649D2500514017 /* Sport Summer Party .mp3 in Resources */,
 				B16CDA6621E55B8200CD222C /* unluck.mp3 in Resources */,
-				B168053522213C2500074350 /* whistle_serv.mp3 in Resources */,
-				B168053722213CFB00074350 /* serv_whistle.mp3 in Resources */,
 				023DB039228459A8007D35D1 /* Main.storyboard in Resources */,
-				B16805332221388E00074350 /* whistle_orig.mp3 in Resources */,
 				B17BB40B2388029D00FB11B2 /* Localizable.strings in Resources */,
+				0479397224649D3D00514017 /* Extreme Sport full edit.mp3 in Resources */,
+				0479397624649DD600514017 /* The Sport Music.mp3 in Resources */,
 				B16CDA6821E55C1800CD222C /* monsterBlock.mp3 in Resources */,
-				B16CDA6421E55B7200CD222C /* oou.mp3 in Resources */,
-				B169701E2328F2FA00B3B961 /* soundOfTimeout1.mp3 in Resources */,
-				B17BB40E23885B1400FB11B2 /* soundOfTimeout3.mp3 in Resources */,
+				0479397A24649E3000514017 /* Sport Summer Dance.mp3 in Resources */,
 				B196753C2386E40900A5D3D6 /* Launch Screen.storyboard in Resources */,
+				0479397C24649E4A00514017 /* Energy Sport Fun Upbeat.mp3 in Resources */,
 				B16CDA6A21E55C3300CD222C /* buzzle.mp3 in Resources */,
 				B1475118233C1A09005C4339 /* whistle_long.mp3 in Resources */,
-				B16CDA6C21E55C6800CD222C /* whistle.mp3 in Resources */,
 				B116A2DF22E24C32004ECE1D /* cheer.mp3 in Resources */,
-				B1E33E8F21E40CCF0006ED59 /* magic.mp3 in Resources */,
-				B169701F2328F2FA00B3B961 /* soundOfTimeout2.mp3 in Resources */,
 				B15F923A2382A2760006B9A9 /* Onboarding.storyboard in Resources */,
+				0479397824649E1500514017 /* Oleg Kashchenko - Sport Summer Dubstep Fashion Pop.mp3 in Resources */,
 				B1E06D2F21E3E8BD008C361A /* Assets.xcassets in Resources */,
-				B1C18BE823265A8A0019BF15 /* soundOfTimeout.mp3 in Resources */,
+				0479397424649DC000514017 /* Fast Sport Energetic Rock (Full).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

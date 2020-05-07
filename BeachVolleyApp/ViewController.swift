@@ -375,6 +375,23 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
          }
         return true
     }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        if (inputTeam1.text == "") {
+            inputTeam1.text = NSLocalizedString("Team 1", comment: "")
+        }
+        if (inputTeam2.text == "") {
+        inputTeam2.text = NSLocalizedString("Team 2", comment: "")
+        }
+    }
+    
+    @objc func inputControllerBackgroundTapped()
+      {
+        inputTeam1.isUserInteractionEnabled = false
+        inputTeam2.isUserInteractionEnabled = false
+        inputTeam1.text = NSLocalizedString("Team 1", comment: "")
+        inputTeam2.text = NSLocalizedString("Team 2", comment: "")
+      }
   
     // текущая партия, установка вручную
         
@@ -529,7 +546,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         } else {
             select_service2.isHidden = true
         }
-        saveServ = 0                            // доделать сброс подающего игрока при свайпе вниз
+        saveServ = 0
     }
     
     // свайп вверх и вниз для очков команды2
@@ -609,26 +626,42 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
         if (sender.currentImage?.isEqual(UIImage(named: "play-button")))! {
         playPauseBTN.setImage(UIImage.init(named: "pauseBtn"), for: .normal)
             if num == 1 {
-                name = "soundOfTimeout3"
+                name = "Energy Sport Fun Upbeat"
                 playSound()
                 num += 1
                 
             } else if num == 2 {
-                name = "soundOfTimeout1"
+                name = "Oleg Kashchenko - Sport Summer Dubstep Fashion Pop"
                 playSound()
                 num += 1
                 
             } else if num == 3 {
-                name = "soundOfTimeout2"
+                name = "Fast Sport Energetic Rock (Full)"
                 playSound()
                 num += 1
                 
             } else if num == 4 {
-                name = "soundOfTimeout"
+                name = "The Sport Music"
+                playSound()
+                num += 1
+                
+            } else if num == 5 {
+                name = "Extreme Sport full edit"
+                playSound()
+                num += 1
+                
+            } else if num == 6 {
+                name = "Sport Summer Dance"
+                playSound()
+                num += 1
+                
+            } else if num == 7 {
+                name = "Sport Summer Party "
                 playSound()
                 num = 1
                 
             }
+            
             DigBtn.isEnabled = false
             blockBTN.isEnabled = false
             atackBTN.isEnabled = false
@@ -872,7 +905,6 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     func dim () {
         view.backgroundColor = UIColor(red:0.89, green:0.89, blue:0.89, alpha:1.0)
-
         inputTeam1.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
         inputTeam2.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
         whistleB.backgroundColor = UIColor(red:0.77, green:0.75, blue:0.75, alpha:1.0)
@@ -1151,6 +1183,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioPlayerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+
         inputTeam2.delegate = self
         inputTeam1.delegate = self
         inputTeam1.text = NSLocalizedString("Team 1", comment: "")
