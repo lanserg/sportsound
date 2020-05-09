@@ -138,6 +138,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     
     //поделиться
     
+    @IBOutlet weak var shareBTNOutlet: UIButton!
+    
     @IBAction func ShareButton(_ sender: Any) {
         if (coreArray.isEmpty == false) {
         let shareActivity = UIActivityViewController (activityItems: [arr()], applicationActivities: nil)
@@ -165,7 +167,10 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     
     // очистка таблица с Alert вопросом подтверждения
     
+    @IBOutlet weak var clearLogOutlet: UIButton!
+    
     @IBAction func ClearLogButton(_ sender: UIButton) {
+        if (coreArray.isEmpty == false) {
         let dialogMessage = UIAlertController(title: NSLocalizedString("Deleting history", comment: ""), message: NSLocalizedString("Are you sure you want to delete the history?", comment: ""), preferredStyle: .alert)
 
         let ok = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: { (action) -> Void in
@@ -174,6 +179,10 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             self.vcClear = "1"
             self.coreArray.removeAll()
             self.tableView.reloadData()
+            if (self.coreArray.isEmpty == true) {
+                self.shareBTNOutlet.isEnabled = false
+                self.clearLogOutlet.isEnabled = false
+            }
         })
             
         
@@ -187,7 +196,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         
         self.present(dialogMessage, animated: true, completion: nil)
         }
-
+    }
  // прячем navigationBar
     
     override func viewWillAppear(_ animated: Bool) {
@@ -219,6 +228,15 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == .right {
             self.navigationController?.popViewController(animated: true)
+        }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        if (coreArray.isEmpty == true) {
+            shareBTNOutlet.isEnabled = false
+            clearLogOutlet.isEnabled = false
+        } else {
+            shareBTNOutlet.isEnabled = true
+            clearLogOutlet.isEnabled = true
         }
     }
     
